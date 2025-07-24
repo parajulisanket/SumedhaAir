@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar-scrolled .logo-white {
+  display: none !important;
+}
+.navbar-scrolled .logo-black {
+  display: block !important;
+}
+
+.nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600; 
+  letter-spacing: 1px; 
+}

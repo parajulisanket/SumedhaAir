@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumedha Air</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="relative min-h-screen bg-white">
+    <!-- HERO part  -->
+    <section
+      id="hero"
+      class="relative min-h-[90vh] md:min-h-[100vh] overflow-hidden flex flex-col"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="./assets/hero-background.png"
+          alt="Heli Tour Nepal"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- NAVBAR  -->
+      <header class="relative z-50">
+        <nav
+          id="mainNav"
+          class="fixed top-0 left-0 w-full transition-all duration-300 bg-transparent text-white z-50"
+        >
+          <div
+            class="max-w-7xl mx-auto flex items-center justify-between w-full px-6 py-5"
+          >
+            <a href="/index.html">
+              <img
+                src="./assets/logo.png"
+                alt="Logo"
+                class="logo-white block h-16 w-auto cursor-pointer"
+              />
+              <img
+                src="./assets/logo1.png"
+                alt="Logo"
+                class="logo-black hidden h-16 w-auto cursor-pointer"
+              />
+            </a>
+
+            <ul class="hidden md:flex items-center gap-10 nav">
+              <li>
+                <a
+                  href="./index.html"
+                  class="hover:text-[#E0972A] transition tracking-wide"
+                  >Home</a
+                >
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide"
+                >
+                  Heli Tours
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div
+                  class="absolute left-0 mt-2 w-40 bg-white rounded shadow-md hidden group-hover:block"
+                >
+                  <a
+                    href="#everest-tour"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >Everest Tour</a
+                  >
+                  <a
+                    href="#annapurna-tour"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >Annapurna Tour</a
+                  >
+                </div>
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-[#E0972A] transition tracking-wide"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ourFleet.html"
+                  class="hover:text-[#E0972A] transition tracking-wide"
+                  >Our Fleet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="hover:text-[#E0972A] transition tracking-wide"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contactUs.html"
+                  class="hover:text-[#E0972A] transition tracking-wide"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+              <button id="menu-btn" class="focus:outline-none">
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hr line  -->
+        <hr class="border-[#FAF9F8]/20 mt-[95px]" />
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40"
+            id="menu-overlay"
+          ></div>
+          <div
+            class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
+            id="menu-panel"
+            style="transform: translateX(-100%)"
+          >
+            <button
+              id="close-menu"
+              class="absolute top-4 right-4 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+              aria-label="Close Menu"
+            >
+              &times;
+            </button>
+            <nav class="flex flex-col gap-7 mt-14 text-left">
+              <a
+                href="#"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Heli Tours</a
+              >
+              <a
+                href="./services.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Services</a
+              >
+              <a
+                href="./ourFleet.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Our Fleet</a
+              >
+              <a
+                href="#"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >About Us</a
+              >
+              <a
+                href="#"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Contact</a
+              >
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero part-->
+      <div
+        class="relative z-10 w-full flex-1 flex flex-col items-center justify-center text-center px-6"
+      >
+        <h1
+          class="text-white text-4xl sm:text-5xl md:text-6xl leading-normal sm:leading-loose drop-shadow-lg hero-title"
+        >
+          The Sky Is Calling...<br />
+          Answer With An Epic Heli-Tour <br />Adventure
+        </h1>
+        <p
+          class="mt-6 text-gray-200 text-lg sm:text-xl max-w-3xl mx-auto tracking-wide leading-tight title font-normal"
+        >
+          Beyond the horizon, a new view awaits. Transform your perspective and
+          create unforgettable memories high above Nepal's most breathtaking
+          landscapes.
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-block bg-[#DFA958] hover:bg-[#E0972A] text-white font-semibold px-8 py-3 transition tracking-wide"
+        >
+          Book A Tour Now
+        </a>
+      </div>
+    </section>
+
+    <!-- about part -->
+    <section class="relative bg-[#FAF9F6]">
+      <div
+        class="max-w-7xl mx-auto px-6 py-16 pb-32 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left Content -->
+        <div>
+          <h3 class="text-2xl text-[#DFA958] font-semibold mb-4 title">
+            About Us
+          </h3>
+          <h2
+            class="text-3xl md:text-4xl leading-[2.5rem] md:leading-[3rem] text-gray-900 mb-6 hero-title"
+          >
+            Soaring Beyond<br />
+            Expectations. Your Journey,<br />
+            Our Passion.
+          </h2>
+          <p
+            class="text-gray-800 text-base md:text-md mb-8 leading-relaxed leading-5 tracking-wider title font-normal"
+          >
+            Based In Kathmandu, Sumedha Air Specializes In Crafting Exclusive
+            Heli-Tour Adventures Across Nepal's Most Stunning Landscapes. We
+            Combine Unparalleled Safety, Expert Pilots, And Personalized Service
+            To Ensure Every Flight Is An Unforgettable Journey.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-[#DFA958] hover:bg-[#E0972A] text-white font-semibold px-8 py-3 transition"
+          >
+            Discover More
+          </a>
+        </div>
+        <!-- Right Images -->
+        <div class="flex justify-center md:justify-end items-center">
+          <div
+            class="flex flex-col gap-4 md:relative md:w-[400px] md:h-[410px] md:flex-none"
+          >
+            <!-- Big main image -->
+            <img
+              src="./assets/about-img1.png"
+              alt="Cockpit View"
+              class="w-full h-auto object-cover z-10 md:absolute md:top-1 md:right-44 md:w-[300px] md:h-[450px]"
+            />
+            <!-- Top right image -->
+            <img
+              src="./assets/about-image2.png"
+              alt="Helicopter on Snow"
+              class="w-full h-auto object-cover z-20 border-8 border-[#FAF9F6] md:absolute md:top-1 md:right-0 md:w-[250px] md:h-[270px]"
+            />
+            <!-- Bottom right image -->
+            <img
+              src="./assets/about-image3.png"
+              alt="Pilot with Helicopter"
+              class="w-full h-auto object-cover z-20 md:absolute md:-bottom-16 md:right-2 md:w-[160px] md:h-[200px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Popular Tours Section -->
+    <section class="bg-[#FAF6EE] py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Header Row -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4"
+        >
+          <div>
+            <div class="text-2xl title font-semibold text-[#DFA958] mb-2">
+              Most Popular Tours
+            </div>
+            <h2
+              class="text-4xl md:text-5xl text-gray-900 leading-tight hero-title"
+            >
+              Unforgettable Views: Our<br class="hidden md:block home-title" />
+              Guest Favorites
+            </h2>
+          </div>
+          <!-- Arrows -->
+          <div class="flex gap-4 self-start md:self-end mt-4 md:mt-0">
+            <button
+              id="arrow-left"
+              class="w-10 h-10 border-2 border-[#DFA958] text-yellow-600 transition hover:bg-[#DFA958] hover:text-white flex items-center justify-center"
+              aria-label="Previous"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              id="arrow-right"
+              class="w-10 h-10 border-2 border-[#DFA958] text-yellow-600 transition hover:bg-[#DFA958] hover:text-white flex items-center justify-center"
+              aria-label="Next"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Cards Row -->
+        <div
+          id="cards-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          <!-- Tour Card 1 -->
+          <div
+            id="everest-tour"
+            class="carousel-card bg-white border-4 border-white"
+          >
+            <img
+              src="./assets/everest.webp"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+            <div class="p-5">
+              <!-- Features Row -->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Everest Base Camp Heli<br />Heli Tour
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div
+            id="annapurna-tour"
+            class="carousel-card bg-white border-4 border-white"
+          >
+            <img
+              src="./assets/popular-1.png"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+            <div class="p-5">
+              <!-- Features Row 2-->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Annapurna Base Camp<br />Heli Tour
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="carousel-card bg-white border-4 border-white">
+            <img
+              src="./assets//muktinath.jpg"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+            <div class="p-5">
+              <!-- Features Row 3 -->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Muktinath Darshan<br />
+                Tour
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="carousel-card bg-white border-4 border-white">
+            <img
+              src="./assets/langtang.jpg"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+            <div class="p-5">
+              <!-- Features Row 4-->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Langtang Valley Scenic<br />
+                Flight
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="carousel-card bg-white border-4 border-white">
+            <img
+              src="./assets/rara.jpeg"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+
+            <div class="p-5">
+              <!-- Features Row  5-->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Rara Lake Aerial <br />Tour
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="carousel-card bg-white border-4 border-white">
+            <img
+              src="./assets/uppermustang.jpg"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+
+            <div class="p-5">
+              <!-- Features Row 6-->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Upper Mustang <br />Exploration
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="carousel-card bg-white border-4 border-white">
+            <img
+              src="./assets/haleshi.jpg"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+
+            <div class="p-5">
+              <!-- Features Row 7-->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Halesi and Pathibhara <br />Temple Tours
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="carousel-card bg-white border-4 border-white">
+            <img
+              src="./assets/gosaikunda.webp"
+              alt="Annapurna Base Camp"
+              class="w-full h-56 object-cover p-2"
+            />
+
+            <div class="p-5">
+              <!-- Features Row 8 -->
+              <div class="flex gap-6 text-sm text-gray-600 mb-3">
+                <span class="flex items-center text-xs">
+                  <img src="./assets/Rs-icon.png" alt="" class="h-5 w-5" />
+                  RS.00,000
+                </span>
+                <span class="flex items-center text-xs">
+                  <img src="./assets/time-icon.png" alt="" class="h-5 w-5" />
+                  53 minutes
+                </span>
+                <span class="flex items-center text-xs">
+                  <img
+                    src="./assets/passanger-icon.png"
+                    alt=""
+                    class="h-5 w-5"
+                  />
+                  4 Passengers
+                </span>
+              </div>
+              <div class="font-normal text-lg mb-3 title">
+                Gosaikunda Pilgrimage <br />Heli Tour
+              </div>
+              <a
+                href="#"
+                class="block bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- How It Works Section -->
+    <section class="relative min-h-[70vh] bg-gray-900">
+      <!-- Background Image -->
+      <img
+        src="./assets/how-it-works-img.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <!-- Content -->
+      <div class="relative z-20 max-w-7xl mx-auto px-6 py-16">
+        <!-- Section Title -->
+        <div class="mb-10">
+          <div class="text-2xl font-semibold text-[#DFA958] mb-4 title">
+            How It Works
+          </div>
+          <h2
+            class="text-4xl md:text-5xl text-white leading-loose tracking-wide mb-10 hero-title"
+          >
+            Your Journey in<br class="hidden md:block" />
+            3 Simple Steps
+          </h2>
+        </div>
+        <!-- Steps Row -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
+          <!-- Step 1 -->
+          <div>
+            <div class="flex items-center gap-10 mb-2">
+              <span
+                class="text-yellow-400 text-lg md:text-xl font-normal tracking-widest"
+                >STEP <br />
+                <span
+                  class="text-yellow-400 text-6xl md:text-7xl font-semibold leading-none hero-title"
+                  >01</span
+                ></span
+              >
+
+              <div
+                class="text-3xl md:text-4xl text-white mb-2 leading-tight hero-title tracking-wider"
+              >
+                Choose Your<br />Adventure
+              </div>
+            </div>
+            <p
+              class="text-white text-lg md:text-base opacity-90 mt-8 leading-loose font-light title"
+            >
+              Browse our diverse range of heli-tours, from short scenic flights
+              to multi-day expeditions. Select the perfect journey for you.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div>
+            <div class="flex items-center gap-10 mb-2">
+              <span
+                class="text-yellow-400 text-lg md:text-xl font-normal tracking-widest"
+                >STEP <br />
+                <span
+                  class="text-yellow-400 text-6xl md:text-7xl font-medium leading-none hero-title"
+                  >02</span
+                ></span
+              >
+
+              <div
+                class="text-3xl md:text-4xl text-white mb-2 leading-tight hero-title tracking-wider"
+              >
+                Book Your<br />Flight
+              </div>
+            </div>
+            <p
+              class="text-white text-lg md:text-base opacity-90 mt-8 leading-loose font-light title"
+            >
+              Browse our diverse range of heli-tours, from short scenic flights
+              to multi-day expeditions. Select the perfect journey for you.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div>
+            <div class="flex items-center gap-10 mb-2">
+              <span
+                class="text-yellow-400 text-lg md:text-xl font-normal tracking-widest"
+                >STEP <br />
+                <span
+                  class="text-yellow-400 text-6xl md:text-7xl font-medium leading-none hero-title"
+                  >03</span
+                ></span
+              >
+
+              <div
+                class="text-3xl md:text-4xl text-white mb-2 leading-tight hero-title tracking-wider"
+              >
+                Soar &<br />Experience
+              </div>
+            </div>
+            <p
+              class="text-white text-lg md:text-base opacity-90 mt-8 leading-loose font-light title"
+            >
+              Browse our diverse range of heli-tours, from short scenic flights
+              to multi-day expeditions. Select the perfect journey for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="relative bg-white py-20">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12"
+      >
+        <!-- Left Side -->
+        <div class="md:w-1/3">
+          <div
+            class="text-2xl font-semibold text-[#DFA958] mb-4 tracking-wide title"
+          >
+            Testimonials
+          </div>
+          <h2 class="text-5xl text-gray-900 leading-tight hero-title">
+            Journeys That<br />Leave a Mark
+          </h2>
+        </div>
+        <!-- Right Side -->
+        <div class="relative flex-1 flex items-start">
+          <!-- Quote Icon  -->
+          <i
+            class="fa-solid fa-quote-right hidden sm:block absolute top-0 right-0 text-8xl text-[#F7F3EB] pointer-events-none mt-2"
+          ></i>
+
+          <!-- Testimonial Body -->
+          <div class="w-full">
+            <div
+              class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-2"
+            >
+              <!-- Avatar -->
+              <div class="flex-shrink-0">
+                <div
+                  class="rounded-full border-4 border-[#DFA958] p-2 w-24 h-24 flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/pramod1-400x220.jpeg"
+                    alt="image"
+                    class="rounded-full object-cover w-20 h-20"
+                  />
+                </div>
+              </div>
+              <!-- Name & Position -->
+              <div class="flex-1 flex flex-col items-start justify-center mt-4">
+                <span
+                  class="text-2xl font-bold text-gray-900 mb-0 leading-tight tracking-wider"
+                  >Pramod Raj Sedhain</span
+                >
+                <span class="text-gray-400 text-md mt-1">CEO</span>
+              </div>
+            </div>
+            <!-- Testimonial Text -->
+            <div
+              class="text-xl text-gray-800 font-normal my-6 leading-relaxed text-justify title"
+            >
+              Our heli-tour with Sumedha Air was beyond incredible. The views of
+              the Himalayas were mind-blowing, and our pilot was fantastic – so
+              knowledgeable and made us feel completely at ease. This was truly
+              the highlight of our trip!
+            </div>
+            <!-- Stars Row -->
+            <div class="flex items-center mt-2 space-x-1">
+              <!-- 5 stars -->
+              <i class="fa-solid fa-star text-2xl text-[#DFA958]"></i>
+              <i class="fa-solid fa-star text-2xl text-[#DFA958]"></i>
+              <i class="fa-solid fa-star text-2xl text-[#DFA958]"></i>
+              <i class="fa-solid fa-star text-2xl text-[#DFA958]"></i>
+              <i class="fa-solid fa-star text-2xl text-[#DFA958]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why us part -->
+    <section class="bg-[#FAF9F8] py-20 px-4 md:px-10">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+        <div>
+          <span
+            class="text-[#DFA958] title font-semibold text-2xl mb-3 inline-block"
+            >Why Us</span
+          >
+          <h2
+            class="text-3xl md:text-5xl text-gray-900 leading-tight mb-8 hero-title"
+          >
+            Experience the Sumedha<br class="hidden md:block" />
+            Air Difference.
+          </h2>
+        </div>
+
+        <!-- Features Row -->
+        <div class="flex flex-col md:flex-row gap-8 md:gap-0">
+          <!-- Feature 1 -->
+          <div class="flex items-start gap-4 px-2 py-2">
+            <div class="flex-shrink-0 pt-1">
+              <img src="./assets/whyus-img1.svg" alt="" class="w-12 h-12" />
+            </div>
+            <div>
+              <h3
+                class="text-3xl text-gray-900 mb-3 leading-snug hero-title font-thin"
+              >
+                Unrivalled Safety<br />Standards
+              </h3>
+              <p
+                class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
+              >
+                Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+                Stringent International Safety Protocols And Operate A
+                Meticulously Maintained, State-Of-The-Art Fleet.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="flex items-start gap-4 px-2 py-2">
+            <div class="flex-shrink-0 pt-1">
+              <img src="./assets/whyus-img-2.png" alt="" class="w-12 h-12" />
+            </div>
+            <div>
+              <h3
+                class="text-3xl text-gray-900 mb-3 leading-snug hero-title font-thin"
+              >
+                Expert Pilots &amp;<br />Crew
+              </h3>
+              <p
+                class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
+              >
+                Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+                Stringent International Safety Protocols And Operate A
+                Meticulously Maintained, State-Of-The-Art Fleet.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="flex items-start gap-4 px-2 py-2">
+            <div class="flex-shrink-0 pt-1">
+              <img src="./assets/whyus-img3.png" alt="" class="w-12 h-12" />
+            </div>
+            <div>
+              <h3
+                class="text-3xl text-gray-900 mb-3 leading-snug hero-title font-thin"
+              >
+                Personalized Luxury<br />Experiences
+              </h3>
+
+              <p
+                class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
+              >
+                Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+                Stringent International Safety Protocols And Operate A
+                Meticulously Maintained, State-Of-The-Art Fleet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- book tour -->
+
+    <section
+      class="relative min-h-screen flex items-center justify-center"
+      style="
+        background-image: url('./assets/book-tour-img.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="relative z-10 w-full max-w-4xl mx-auto py-16 px-4">
+        <!-- Title & Subtitle -->
+        <div class="text-center mb-12">
+          <div class="text-2xl font-semibold text-[#DFA958] title mb-2">
+            Book Tour
+          </div>
+          <h2
+            class="text-white text-4xl md:text-5xl mb-3 hero-title drop-shadow-md tracking-wide"
+          >
+            Begin Your Aerial<br class="hidden md:block" />
+            Adventure Today
+          </h2>
+        </div>
+        <!-- Booking Form -->
+        <form class="bg-transparent">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Full Name -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/book-user.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <!-- Country -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/country-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <select
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              >
+                <option>Country</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>China</option>
+              </select>
+            </div>
+            <!-- Phone Number -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/phone-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <!-- Passengers -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/passanger-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="number"
+                placeholder="No. of Passengers"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <!-- Fly From -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/fly-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="text"
+                placeholder="Fly From"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <!-- Fly To -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/fly-to-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="text"
+                placeholder="Fly To"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <!-- Departure Date -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/date-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="date"
+                placeholder="Departure Date"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+            <!-- Arrival Date -->
+            <div class="flex items-center bg-white shadow px-4 py-4">
+              <img
+                src="./assets/date-icon.png"
+                class="w-6 h-6 text-yellow-500 mr-3"
+                alt=""
+              />
+              <input
+                type="date"
+                placeholder="Arrival Date"
+                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
+              />
+            </div>
+          </div>
+          <!-- Book Button -->
+          <div class="flex justify-center mt-8">
+            <button
+              type="submit"
+              class="bg-[#DFA958] hover:bg-[#E0972A] text-white text-lg font-semibold px-12 py-3 transition"
+            >
+              Book Tour
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- latest update -->
+    <section class="bg-[#FAF9F8] py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Header Row -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4"
+        >
+          <div>
+            <div class="text-2xl font-semibold text-[#DFA958] mb-2 title">
+              Latest Updates
+            </div>
+            <h2
+              class="text-4xl md:text-5xl text-gray-900 leading-tight tracking-wide mb-0 hero-title"
+            >
+              Fresh Perspectives: Exciting<br class="hidden md:block" />
+              Updates from the Sky
+            </h2>
+          </div>
+          <div class="mt-4 md:mt-0 self-start md:self-end">
+            <a
+              href="#"
+              class="inline-flex items-center border-2 border-[#DFA958] text-[#DFA958] font-medium px-6 py-2 transition hover:bg-yellow-50"
+            >
+              Explore More
+              <i class="fa-solid fa-chevron-right ml-2 w-5 h-5 mt-2"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white shadow border border-white transition hover:shadow-sm"
+          >
+            <img
+              src="./assets/latest-update1.jpeg"
+              alt="Helicopter Scenic"
+              class="w-full h-60 object-cover px-4 pt-4"
+            />
+            <div class="p-5">
+              <div class="text-gray-400 text-xs mb-2">27 July 2025</div>
+              <div class="font-semibold text-lg mb-2 leading-snug">
+                From Peaks to Valleys: What It Feels Like to Fly with Sumedha
+                Air
+              </div>
+              <div
+                class="text-gray-800 text-sm mb-6 title font-normal leading-relaxed"
+              >
+                Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+                Stringent International Safety Protocols...
+              </div>
+              <a
+                href="#"
+                class="block w-full bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white shadow border border-white transition hover:shadow-sm"
+          >
+            <img
+              src="./assets/latest-update2.jpeg"
+              alt="Helicopter Over Mountains"
+              class="w-full h-60 object-cover px-4 pt-4"
+            />
+            <div class="p-5">
+              <div class="text-gray-400 text-xs mb-2">27 July 2025</div>
+              <div class="font-semibold text-lg mb-2 leading-snug">
+                From Peaks to Valleys: What It Feels Like to Fly with Sumedha
+                Air
+              </div>
+              <div
+                class="text-gray-800 text-sm mb-6 title font-normal leading-relaxed"
+              >
+                Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+                Stringent International Safety Protocols...
+              </div>
+              <a
+                href="#"
+                class="block w-full bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white shadow border border-white transition hover:shadow-sm"
+          >
+            <img
+              src="./assets/latest-update3.png"
+              alt="Helicopter Scenic"
+              class="w-full h-60 object-cover px-4 pt-4"
+            />
+            <div class="p-5">
+              <div class="text-gray-400 text-xs mb-2">27 July 2025</div>
+              <div class="font-semibold text-lg mb-2 leading-snug">
+                From Peaks to Valleys: What It Feels Like to Fly with Sumedha
+                Air
+              </div>
+              <div
+                class="text-gray-800 text-sm mb-6 title font-normal leading-relaxed"
+              >
+                Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+                Stringent International Safety Protocols...
+              </div>
+              <a
+                href="#"
+                class="block w-full bg-[#DFA958] hover:bg-[#E0972A] text-white text-center py-3 font-semibold transition"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-[#23262A] text-white pt-12 pb-5 relative border-t border-gray-700 overflow-hidden"
+    >
+      <!-- background -->
+      <img
+        src="./assets/footer-img.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+      />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <!-- Top Row: Logo & Nav -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8"
+        >
+          <!-- Logo -->
+          <div>
+            <img
+              src="./assets/logo.png"
+              alt="Sumedha Air Logo"
+              class="h-16 w-auto"
+            />
+          </div>
+          <!-- Navigation -->
+          <ul class="flex flex-wrap gap-8 text-lg font-medium">
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Heli Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav">About</a>
+            </li>
+            <li>
+              <a
+                href="./ourFleet.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Our Fleet</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-8"></div>
+
+        <!-- Info Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+          <!-- Overview -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4>
+            <p class="text-white text-base title font-normal">
+              Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+              Stringent International Safety Protocols...
+            </p>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
+            <p class="text-white text-base mb-2 title font-normal">
+              +977 986542789
+            </p>
+            <p class="text-white text-base title font-normal">
+              youremail@gmail.com
+            </p>
+          </div>
+          <!-- Address -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Address</h4>
+            <p class="text-white text-base title font-normal">
+              New Baneshwor, Eyeplex Mall<br />
+              Kathmandu
+            </p>
+          </div>
+          <!-- Working Hour -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
+            <p class="text-white text-base title font-normal">
+              9 AM - 6 PM<br />Sun - Fri
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-4"></div>
+
+        <!-- Bottom: Copyright & Socials -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <div class="text-white text-sm title font-light">
+            © 2025 Sumedha Air. All Rights Reserved.
+          </div>
+          <div class="flex gap-8 mt-2 md:mt-0">
+            <!-- social media icons-->
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script part  -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/navigation.js"></script>
+  </body>
+</html>

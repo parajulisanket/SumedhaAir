@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumedha Air | Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="relative min-h-screen bg-[#FAF9F6]">
+    <!-- NAVBAR  -->
+    <nav
+      id="mainNav"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#FAF9F6]/80"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between w-full px-6 py-5"
+      >
+        <a href="/index.html">
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            class="logo-white block h-16 w-auto cursor-pointer"
+          />
+          <img
+            src="./assets/logo1.png"
+            alt="Logo"
+            class="logo-black hidden h-16 w-auto cursor-pointer"
+          />
+        </a>
+        <ul class="hidden md:flex items-center gap-10 nav">
+          <li>
+            <a
+              href="/index.html"
+              class="hover:text-[#E0972A] transition tracking-wide"
+              >Home</a
+            >
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide"
+            >
+              Heli Tours
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#E0972A] transition tracking-wide"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="./ourFleet.html"
+              class="hover:text-[#E0972A] transition tracking-wide"
+              >Our Fleet</a
+            >
+          </li>
+          <li>
+            <a
+              href="/about.html"
+              class="hover:text-[#E0972A] transition tracking-wide"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contactUs.html"
+              class="hover:text-[#E0972A] transition tracking-wide"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <hr class="border-[#FAF9F8]/20 -mt-2" />
+      <!-- Mobile Menu Overlay -->
+      <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40"
+          id="menu-overlay"
+        ></div>
+        <div
+          class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
+          id="menu-panel"
+          style="transform: translateX(-100%)"
+        >
+          <button
+            id="close-menu"
+            class="absolute top-4 right-4 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+            aria-label="Close Menu"
+          >
+            &times;
+          </button>
+          <nav class="flex flex-col gap-7 mt-14 text-left">
+            <a
+              href="#"
+              class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+              >Heli Tours</a
+            >
+            <a
+              href="./services.html"
+              class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+              >Services</a
+            >
+            <a
+              href="./ourFleet.html"
+              class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+              >Our Fleet</a
+            >
+            <a
+              href="#"
+              class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO IMAGE (directly below nav, spans full width) -->
+    <section
+      class="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center"
+      style="background-image: url('./assets/service.jpg'); margin-top: 0"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 w-full max-w-7xl px-6">
+        <h1
+          class="text-white text-4xl md:text-5xl font-semibold mb-3 hero-title"
+        >
+          Our Services
+        </h1>
+      </div>
+    </section>
+
+    <!-- Section: Title, subtitle, intro -->
+    <section class="bg-[#FAF9F6] py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <div
+          class="uppercase text-lg tracking-widest text-[#DFA958] font-semibold mb-2 title"
+        >
+          Services
+        </div>
+        <h2
+          class="text-3xl md:text-4xl font-semibold text-gray-800 mb-3 hero-title"
+        >
+          We Offer a Range of Premium Heli Services
+        </h2>
+        <p class="text-gray-500 text-lg mb-6">
+          Explore the skies with our wide range of helicopter and charter
+          services across Nepal. From breathtaking scenic flights to urgent
+          medical evacuations and VIP tours, we’re dedicated to safety, comfort,
+          and unforgettable experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="bg-[#FAF9F6] pb-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service Cards -->
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Mountain Flights
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Experience the Himalayas up close with our exclusive mountain
+            flights.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-helicopter"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Scenic Flights
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Everest, Annapurna, Langtang & more—Nepal’s wonders from the sky.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-briefcase-medical"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Rescue & Emergency Evacuation
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Swift response for critical situations—trusted by hospitals and
+            trekkers.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-church"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Holy/Religious Tours
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Muktinath, Halesi, Pathibhara & sacred destinations—spiritual
+            journeys made easy.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Aerial Filming & Photography
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Capture Nepal’s beauty from above—film, documentaries, and more.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Customized Charter Tours
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Personalized itineraries, remote landings, unforgettable adventures.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            VIP & Corporate Charters
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Business, leisure, and celebrity travel with maximum comfort &
+            privacy.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-box"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Cargo Transport
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Efficient and secure cargo delivery to any destination.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-taxi"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Pick-up & Drop-off Services
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Hotel, airport, remote areas—convenience at your fingertips.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-kit-medical"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Medical Evacuation Packages
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Comprehensive care and safe transit for patients and families.
+          </p>
+        </div>
+        <div
+          class="bg-white shadow-md p-7 flex flex-col items-start group hover:bg-[#E2BC73] hover:text-white transition cursor-pointer"
+        >
+          <div class="text-3xl mb-4 text-[#E2BC73] group-hover:text-white">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 hero-title tracking-wider">
+            Govt & Diplomatic Missions
+          </h3>
+          <p class="text-gray-500 group-hover:text-white">
+            Special charters for official, government, and diplomatic
+            engagements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-[#181818] py-12">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center"
+      >
+        <div>
+          <div
+            class="counter text-3xl md:text-4xl font-extrabold text-[#E2BC73] hero-title"
+            data-target="40"
+          >
+            0
+          </div>
+          <div class="text-white mt-2 text-lg tracking-wide title font-normal">
+            Destinations
+          </div>
+        </div>
+        <div>
+          <div
+            class="counter text-3xl md:text-4xl font-extrabold text-[#E2BC73] hero-title"
+            data-target="25"
+          >
+            0
+          </div>
+          <div class="text-white mt-2 text-lg tracking-wide title font-normal">
+            Expert Pilots
+          </div>
+        </div>
+        <div>
+          <div
+            class="counter text-3xl md:text-4xl font-extrabold text-[#E2BC73] hero-title"
+            data-target="50"
+          >
+            0
+          </div>
+          <div class="text-white mt-2 text-lg tracking-wide title font-normal">
+            Successful Evacuations
+          </div>
+        </div>
+        <div>
+          <div
+            class="counter text-3xl md:text-4xl font-extrabold text-[#E2BC73] hero-title"
+            data-target="100"
+          >
+            0%
+          </div>
+          <div class="text-white mt-2 text-lg tracking-wide title font-normal">
+            Safety Record
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="bg-[#FAF9F6] py-16">
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div class="text-left">
+          <div
+            class="uppercase text-2xl tracking-widest text-[#DFA958] font-semibold mb-2"
+          >
+            Why Choose Us
+          </div>
+          <h2
+            class="text-3xl md:text-4xl font-semibold text-gray-800 mb-3 hero-title tracking-wide"
+          >
+            Experience, Safety, and Flexibility
+          </h2>
+          <p class="text-gray-500 text-lg mb-6 title font-normal">
+            With years of flying expertise and an unmatched safety record,
+            Sumedha Air is trusted for mountain rescue, filming, religious
+            tours, and VIP missions. We customize every charter to meet your
+            unique needs.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <div class="text-[#DFA958] text-2xl font-bold mb-2">01</div>
+            <div class="text-gray-800 font-semibold mb-1 hero-title text-xl">
+              Safety First
+            </div>
+            <div class="text-gray-500 text-sm title font-normal">
+              Certified pilots, maintained fleet, highest global standards.
+            </div>
+          </div>
+          <div>
+            <div class="text-[#DFA958] text-2xl font-bold mb-2">02</div>
+            <div class="text-gray-800 font-semibold mb-1 hero-title text-xl">
+              Rapid Response
+            </div>
+            <div class="text-gray-500 text-sm title font-normal">
+              Ready 24/7 for emergencies, evacuation, and urgent travel.
+            </div>
+          </div>
+          <div>
+            <div class="text-[#DFA958] text-2xl font-bold mb-2">03</div>
+            <div class="text-gray-800 font-semibold mb-1 hero-title text-xl">
+              Customizable Service
+            </div>
+            <div class="text-gray-500 text-sm title font-normal">
+              Your itinerary, your schedule, your way—fully personalized.
+            </div>
+          </div>
+          <div>
+            <div class="text-[#DFA958] text-2xl font-bold mb-2">04</div>
+            <div class="text-gray-800 font-semibold mb-1 hero-title text-xl">
+              Unmatched Coverage
+            </div>
+            <div class="text-gray-500 text-sm title font-normal">
+              From Everest Base Camp to any remote area in Nepal.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Bar -->
+    <section class="bg-[#181818] py-16">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2
+          class="text-2xl md:text-3xl text-white font-semibold mb-4 hero-title tracking-wider"
+        >
+          Ready for Your Next Adventure?
+        </h2>
+        <p class="text-[#E2BC73] text-lg mb-6">
+          Contact us today for custom quotes and exclusive offers.
+        </p>
+        <a
+          href="/contactUs.html"
+          class="inline-block bg-[#E2BC73] hover:bg-[#DFA958] text-black font-semibold py-3 px-8 transition"
+          >Enquire Now</a
+        >
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-[#23262A] text-white pt-12 pb-5 relative border-t border-gray-700 overflow-hidden"
+    >
+      <!-- background -->
+      <img
+        src="./assets/footer-img.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+      />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <!-- Top Row: Logo & Nav -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8"
+        >
+          <!-- Logo -->
+          <div>
+            <img
+              src="./assets/logo.png"
+              alt="Sumedha Air Logo"
+              class="h-16 w-auto"
+            />
+          </div>
+          <!-- Navigation -->
+          <ul class="flex flex-wrap gap-8 text-lg font-medium">
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Heli Tours</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav">About</a>
+            </li>
+            <li>
+              <a
+                href="./ourFleet.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Our Fleet</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contactUs.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-8"></div>
+
+        <!-- Info Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+          <!-- Overview -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4>
+            <p class="text-white text-base title font-normal">
+              Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+              Stringent International Safety Protocols...
+            </p>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
+            <p class="text-white text-base mb-2 title font-normal">
+              +977 986542789
+            </p>
+            <p class="text-white text-base title font-normal">
+              youremail@gmail.com
+            </p>
+          </div>
+          <!-- Address -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Address</h4>
+            <p class="text-white text-base title font-normal">
+              New Baneshwor, Eyeplex Mall<br />
+              Kathmandu
+            </p>
+          </div>
+          <!-- Working Hour -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
+            <p class="text-white text-base title font-normal">
+              9 AM - 6 PM<br />Sun - Fri
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-4"></div>
+
+        <!-- Bottom: Copyright & Socials -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <div class="text-white text-sm title font-light">
+            © 2025 Sumedha Air. All Rights Reserved.
+          </div>
+          <div class="flex gap-8 mt-2 md:mt-0">
+            <!-- social media icons-->
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script part  -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/services.js"></script>
+  </body>
+</html>

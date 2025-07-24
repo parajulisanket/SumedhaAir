@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumedha Air | About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="relative min-h-screen bg-[#FAF9F6]">
+    <!-- HERO part  -->
+    <section
+      id="hero"
+      class="relative min-h-[90vh] md:min-h-[100vh] overflow-hidden flex flex-col"
+    >
+      <!-- NAVBAR  -->
+      <header class="relative z-50">
+        <nav
+          id="mainNav"
+          class="fixed top-0 left-0 w-full transition-all duration-300 bg-[#FAF9F6] text-white z-50"
+        >
+          <div
+            class="max-w-7xl mx-auto flex items-center justify-between w-full px-6 py-5"
+          >
+            <a href="./index.html">
+              <img
+                src="./assets/logo1.png"
+                alt="Logo"
+                class="logo-white block h-16 w-auto cursor-pointer"
+              />
+              <img
+                src="./assets/logo1.png"
+                alt="Logo"
+                class="logo-black hidden h-16 w-auto cursor-pointer"
+              />
+            </a>
+
+            <ul class="hidden md:flex items-center gap-10 nav">
+              <li>
+                <a
+                  href="/index.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Home</a
+                >
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide text-[#DFA958]"
+                >
+                  Heli Tours
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ourFleet.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Our Fleet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contactUs.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+              <button id="menu-btn" class="focus:outline-none">
+                <svg
+                  class="w-7 h-7 text-[#DFA958]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hr line  -->
+        <hr class="border-[#FAF9F8]/20 mt-[85px]" />
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40"
+            id="menu-overlay"
+          ></div>
+          <div
+            class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
+            id="menu-panel"
+            style="transform: translateX(-100%)"
+          >
+            <button
+              id="close-menu"
+              class="absolute top-4 right-4 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+              aria-label="Close Menu"
+            >
+              &times;
+            </button>
+            <nav class="flex flex-col gap-7 mt-14 text-left">
+              <a
+                href="./index.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Heli Tours</a
+              >
+              <a
+                href="./services.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Services</a
+              >
+              <a
+                href="./ourFleet.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Our Fleet</a
+              >
+              <a
+                href="./about.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >About Us</a
+              >
+              <a
+                href="./contactUs.html"
+                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
+                >Contact</a
+              >
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- about part -->
+      <section class="relative bg-[#FAF9F6] py-16 px-4 md:px-0" id="about">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+          <!-- LEFT SIDE  -->
+          <div class="flex flex-col justify-start">
+            <h3 class="text-[#DFA958] text-2xl font-semibold mb-4 title">
+              About Us
+            </h3>
+            <h2
+              class="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 hero-title"
+            >
+              Soaring Beyond Expectations.<br />
+              Your Journey, Our Passion.
+            </h2>
+            <p class="text-gray-800 text-base mb-3 font-normal title">
+              Sumedha Air is Nepal’s premier helicopter tour company, based in
+              Kathmandu. We offer luxury heli-tour adventures across Nepal’s
+              most stunning landscapes, combining the highest safety standards
+              with personalized service and expert pilots.
+            </p>
+            <!-- Large Image -->
+            <img
+              src="./assets/aboutpage-1.jpg"
+              alt="Cockpit View"
+              class="w-full h-[320px] md:h-[730px] object-cover shadow my-8"
+            />
+          </div>
+
+          <!-- RIGHT SIDE  -->
+          <div class="flex flex-col gap-8 justify-start">
+            <!-- Top big image -->
+            <img
+              src="./assets/aboutpage-2.jpg"
+              alt="Helicopter on Snow"
+              class="w-full h-[170px] md:h-[350px] object-cover shadow mb-4"
+            />
+            <!-- Two small images side by side -->
+            <div class="flex gap-4 mb-4">
+              <img
+                src="./assets/aboutpage-3.jpg"
+                alt="Pilot with Helicopter"
+                class="w-1/2 h-[120px] md:h-[250px] object-cover shadow"
+              />
+              <img
+                src="./assets/aboutpage-4.jpg"
+                alt="Helicopter Interior"
+                class="w-1/2 h-[120px] md:h-[250px] object-cover shadow"
+              />
+            </div>
+            <!-- Supporting paragraph -->
+            <p class="text-gray-800 text-base mb-3 font-normal title">
+              At Sumedha Air, our core values guide everything we do.
+              <strong class="text-[#DFA958]">Safety</strong> is our highest
+              priority—every flight operates under the strictest safety
+              protocols, ensuring peace of mind for our guests. We uphold
+              <strong class="text-[#DFA958]">Integrity</strong> by maintaining
+              transparency, honesty, and ethical practices in all our
+              operations. Driven by a passion for
+              <strong class="text-[#DFA958]">Excellence</strong>, we are
+              committed to delivering outstanding service and unforgettable
+              experiences on every journey.
+            </p>
+
+            <!-- Bullet points -->
+            <ul class="space-y-2 mb-6 title font-normal text-gray-800">
+              <li class="flex items-start gap-3">
+                <span class="text-[#DFA958] text-lg mt-0.5">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+                <span>
+                  Expand services and set new standards in aviation.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#DFA958] text-lg mt-0.5">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+                <span>
+                  Fully certified for safety and operational excellence.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#DFA958] text-lg mt-0.5">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+                <span>
+                  Committed to sustainability and community responsibility.
+                </span>
+              </li>
+            </ul>
+
+            <!-- Discover btn -->
+            <div class="flex justify-start">
+              <a
+                href="#"
+                class="inline-block bg-[#DFA958] text-white text-xl px-8 py-3 text-center -mt-4"
+              >
+                Discover More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-[#23262A] text-white pt-12 pb-5 relative border-t border-gray-700 overflow-hidden"
+    >
+      <!-- background -->
+      <img
+        src="./assets/footer-img.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+      />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <!-- Top Row: Logo & Nav -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8"
+        >
+          <!-- Logo -->
+          <div>
+            <img
+              src="./assets/logo.png"
+              alt="Sumedha Air Logo"
+              class="h-16 w-auto"
+            />
+          </div>
+          <!-- Navigation -->
+          <ul class="flex flex-wrap gap-8 text-lg font-medium">
+            <li>
+              <a href="./index.html" class="hover:text-[#E0972A] transition nav"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Heli Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav">About</a>
+            </li>
+            <li>
+              <a
+                href="./ourFleet.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Our Fleet</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contactUs.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-8"></div>
+
+        <!-- Info Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+          <!-- Overview -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4>
+            <p class="text-white text-base title font-normal">
+              Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+              Stringent International Safety Protocols...
+            </p>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
+            <p class="text-white text-base mb-2 title font-normal">
+              +977 986542789
+            </p>
+            <p class="text-white text-base title font-normal">
+              youremail@gmail.com
+            </p>
+          </div>
+          <!-- Address -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Address</h4>
+            <p class="text-white text-base title font-normal">
+              New Baneshwor, Eyeplex Mall<br />
+              Kathmandu
+            </p>
+          </div>
+          <!-- Working Hour -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
+            <p class="text-white text-base title font-normal">
+              9 AM - 6 PM<br />Sun - Fri
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-4"></div>
+
+        <!-- Bottom: Copyright & Socials -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <div class="text-white text-sm title font-light">
+            © 2025 Sumedha Air. All Rights Reserved.
+          </div>
+          <div class="flex gap-8 mt-2 md:mt-0">
+            <!-- social media icons-->
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script part  -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/navigation.js"></script>
+  </body>
+</html>
