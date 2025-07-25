@@ -127,44 +127,77 @@
             id="menu-panel"
             style="transform: translateX(-100%)"
           >
-            <button
-              id="close-menu"
-              class="absolute top-4 right-4 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
-              aria-label="Close Menu"
-            >
-              &times;
-            </button>
-            <nav class="flex flex-col gap-7 mt-14 text-left">
-              <a
-                href="./index.html"
-                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
-                >Home</a
+            <div class="px-4">
+              <a href="/index.html">
+                <img
+                  src="./assets/logo1.png"
+                  alt="Logo"
+                  class="h-12 w-auto cursor-pointer mb-3"
+                />
+              </a>
+              <button
+                id="close-menu"
+                class="absolute top-8 right-10 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+                aria-label="Close Menu"
               >
+                &times;
+              </button>
+            </div>
+            <hr class="border border-[#DFA958] mt-5" />
+            <nav class="flex flex-col gap-6 text-left mt-10">
+              <a
+                href="/index.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-house text-[#DFA958]"></i> Home
+              </a>
               <a
                 href="#"
-                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
-                >Heli Tours</a
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
               >
+                <i class="fa-solid fa-helicopter text-[#DFA958]"></i>
+                Heli Tours
+              </a>
               <a
                 href="./services.html"
-                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
-                >Services</a
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
               >
+                <i class="fa-solid fa-concierge-bell text-[#DFA958]"></i>
+                Services
+              </a>
+
               <a
                 href="./ourFleet.html"
-                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
-                >Our Fleet</a
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
               >
+                <i class="fa-solid fa-plane-departure text-[#DFA958]"></i>
+                Our Fleet
+              </a>
+
               <a
                 href="./about.html"
-                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
-                >About Us</a
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
               >
+                <i class="fa-solid fa-circle-info text-[#DFA958]"></i>
+                About Us
+              </a>
+
               <a
                 href="./contactUs.html"
-                class="text-2xl font-bold text-gray-900 hover:text-yellow-600"
-                >Contact</a
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
               >
+                <i class="fa-solid fa-phone text-[#DFA958]"></i>
+                Contact
+              </a>
+
+              <div class="mt-auto pt-10">
+                <a
+                  href="/book.html"
+                  class="bg-[#DFA958] text-2xl text-white font-semibold text-center py-3 block hover:bg-[#e0a84e] transition"
+                >
+                  Book Now
+                </a>
+              </div>
             </nav>
           </div>
         </div>
@@ -238,7 +271,9 @@
           </div>
 
           <!-- Column 3: Contact Info + Social -->
-          <div class="flex flex-col justify-between gap-8">
+          <div
+            class="flex flex-col justify-between gap-8 items-start md:items-start text-center md:text-left mx-auto md:mx-0"
+          >
             <div>
               <div class="mb-6">
                 <span
@@ -277,30 +312,35 @@
               <hr class="border-gray-300 mb-6 w-64" />
               <div>
                 <span
-                  class="block text-xl font-normal text-gray-900 mb-2 hero-title"
-                  >Social Media</span
+                  class="block text-xl font-normal text-gray-900 mb-2 hero-title text-center md:text-left"
                 >
-                <div class="flex gap-3 mb-4">
+                  Social Media
+                </span>
+                <div class="flex gap-3 mb-4 justify-center md:justify-start">
                   <a
                     href="#"
                     class="text-[#DFA958] hover:text-[#E0972A] transition text-2xl"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
                   <a
                     href="#"
                     class="text-[#DFA958] hover:text-[#E0972A] transition text-2xl"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                   <a
                     href="#"
                     class="text-[#DFA958] hover:text-[#E0972A] transition text-2xl"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
                   <a
                     href="#"
                     class="text-[#DFA958] hover:text-[#E0972A] transition text-2xl"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -348,31 +388,52 @@
       </div>
     </section>
 
-    <section class="flex justify-center items-center gap-20 py-10">
+    <section
+      class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20 py-10 px-4"
+    >
       <!-- Call Us -->
-      <div class="flex items-center gap-6">
+      <div
+        class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left"
+      >
         <div
-          class="bg-[#DFA958] w-20 h-20 flex justify-center items-center rounded-none"
+          class="bg-[#DFA958] w-16 h-16 sm:w-20 sm:h-20 flex justify-center items-center"
         >
-          <i class="fa-solid fa-phone text-white text-5xl"></i>
+          <i class="fa-solid fa-phone text-white text-3xl sm:text-5xl"></i>
         </div>
         <div>
-          <div class="text-4xl hero-title text-gray-800 mb-2">Call Us</div>
-          <div class="text-xl text-gray-800 font-light tracking-wide">
+          <div
+            class="text-2xl sm:text-3xl md:text-4xl hero-title text-gray-800 mb-1"
+          >
+            Call Us
+          </div>
+          <div
+            class="text-base sm:text-lg md:text-xl text-gray-800 font-light tracking-wide"
+          >
             986542789
           </div>
         </div>
       </div>
+
       <!-- Mail Us -->
-      <div class="flex items-center gap-6">
+      <div
+        class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left"
+      >
         <div
-          class="bg-[#DFA958] w-20 h-20 flex justify-center items-center rounded-none"
+          class="bg-[#DFA958] w-16 h-16 sm:w-20 sm:h-20 flex justify-center items-center"
         >
-          <i class="fa-solid fa-envelope-open-text text-white text-5xl"></i>
+          <i
+            class="fa-solid fa-envelope-open-text text-white text-3xl sm:text-5xl"
+          ></i>
         </div>
         <div>
-          <div class="text-4xl hero-title text-gray-800 mb-2">Mail Us</div>
-          <div class="text-xl text-gray-800 font-light tracking-wide">
+          <div
+            class="text-2xl sm:text-3xl md:text-4xl hero-title text-gray-800 mb-1"
+          >
+            Mail Us
+          </div>
+          <div
+            class="text-base sm:text-lg md:text-xl text-gray-800 font-light tracking-wide"
+          >
             info@sumedhaair.com
           </div>
         </div>
