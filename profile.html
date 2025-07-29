@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo1.png" type="image/png" />
+    <title>Executive Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-white min-h-screen">
+    <!-- NAVBAR  -->
+    <header class="relative z-50">
+      <nav
+        id="mainNav"
+        class="fixed top-0 left-0 w-full transition-all duration-300 bg-transparent text-white z-50"
+      >
+        <div
+          class="max-w-7xl mx-auto flex items-center justify-between w-full px-6 py-5"
+        >
+          <a href="/index.html">
+            <img
+              src="./assets/logo1.png"
+              alt="Logo"
+              class="logo-white block h-16 w-auto cursor-pointer"
+            />
+            <img
+              src="./assets/logo1.png"
+              alt="Logo"
+              class="logo-black hidden h-16 w-auto cursor-pointer"
+            />
+          </a>
+
+          <ul class="hidden md:flex items-center gap-10 nav">
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
+                >Home</a
+              >
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide"
+              >
+                Heli Tours
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div
+                class="absolute left-0 mt-2 w-40 bg-white rounded shadow-md hidden group-hover:block"
+              >
+                <a
+                  href="#everest-tour"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
+                  >Everest Tour</a
+                >
+                <a
+                  href="#annapurna-tour"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
+                  >Annapurna Tour</a
+                >
+              </div>
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./ourFleet.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
+                >Our Fleet</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/team.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contactUs.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Mobile Menu -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+              <svg
+                class="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hr line  -->
+      <hr class="border-[#FAF9F8]/20 mt-[95px]" />
+
+      <!-- Mobile Menu Overlay -->
+      <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40"
+          id="menu-overlay"
+        ></div>
+        <div
+          class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
+          id="menu-panel"
+          style="transform: translateX(-100%)"
+        >
+          <div class="px-4">
+            <a href="/index.html">
+              <img
+                src="./assets/logo1.png"
+                alt="Logo"
+                class="h-12 w-auto cursor-pointer mb-3"
+              />
+            </a>
+            <button
+              id="close-menu"
+              class="absolute top-8 right-10 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+              aria-label="Close Menu"
+            >
+              &times;
+            </button>
+          </div>
+          <hr class="border border-[#DFA958] mt-5" />
+          <nav class="flex flex-col gap-6 text-left mt-10">
+            <a
+              href="/index.html"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-house text-[#DFA958]"></i> Home
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-helicopter text-[#DFA958]"></i>
+              Heli Tours
+            </a>
+            <a
+              href="./services.html"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-concierge-bell text-[#DFA958]"></i>
+              Services
+            </a>
+
+            <a
+              href="./ourFleet.html"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-plane-departure text-[#DFA958]"></i>
+              Our Fleet
+            </a>
+
+            <a
+              href="./about.html"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-circle-info text-[#DFA958]"></i>
+              About Us
+            </a>
+            <a
+              href="./team.html"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-user-group text-[#DFA958]"></i>
+              Team
+            </a>
+
+            <a
+              href="./contactUs.html"
+              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+            >
+              <i class="fa-solid fa-phone text-[#DFA958]"></i>
+              Contact
+            </a>
+
+            <div class="mt-auto pt-10">
+              <a
+                href="/book.html"
+                class="bg-[#DFA958] text-2xl text-white font-semibold text-center py-3 block hover:bg-[#e0a84e] transition"
+              >
+                Book Now
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto py-16 px-4">
+      <div
+        id="profile-content"
+        class="flex flex-col md:flex-row items-start gap-10"
+      ></div>
+    </main>
+    <!-- footer -->
+    <footer
+      class="bg-[#23262A] text-white pt-12 pb-5 relative border-t border-gray-700 overflow-hidden"
+    >
+      <!-- background -->
+      <img
+        src="./assets/footer-img.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+      />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <!-- Top Row: Logo & Nav -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8"
+        >
+          <!-- Logo -->
+          <div>
+            <img
+              src="./assets/logo1.png"
+              alt="Sumedha Air Logo"
+              class="h-16 w-auto"
+            />
+          </div>
+          <!-- Navigation -->
+          <ul class="flex flex-wrap gap-8 text-lg font-medium">
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Heli Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./ourFleet.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Our Fleet</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="hover:text-[#E0972A] transition nav"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="./team.html" class="hover:text-[#E0972A] transition nav"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-8"></div>
+
+        <!-- Info Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+          <!-- Overview -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4>
+            <p class="text-white text-base title font-normal">
+              Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
+              Stringent International Safety Protocols...
+            </p>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
+            <p class="text-white text-base mb-2 title font-normal">
+              +977 986542789<br />
+              info@sumedhaair.com
+            </p>
+          </div>
+          <!-- Address -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Address</h4>
+            <p class="text-white text-base title font-normal">
+              New Baneshwor, Eyeplex Mall<br />
+              Kathmandu
+            </p>
+          </div>
+          <!-- Working Hour -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
+            <p class="text-white text-base title font-normal">
+              9 AM - 6 PM<br />Sun - Fri
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-4"></div>
+
+        <!-- Bottom - Copyright + Socials -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <div class="text-white text-sm title font-light">
+            © 2025 Sumedha Air. All Rights Reserved.
+          </div>
+          <div class="flex gap-8 mt-2 md:mt-0">
+            <!-- social media icons-->
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Team member data (add all your members here)
+      const teamMembers = {
+        "pramod-raj-sedhain": {
+          name: "Pramod Raj Sedhain",
+          img: "./assets/team-img1.jpg",
+          role: "President and Chief Executive Officer",
+          bio: "Pramod Raj Sedhain leads Sumedha Air with a passion for aviation and a commitment to operational excellence. With over 20 years in the industry, he is the driving force behind our mission and vision.",
+        },
+        "brian-west": {
+          name: "Brian West",
+          img: "./assets/brian.jpg",
+          role: "Chief Financial Officer<br>Executive Vice President, Finance",
+          bio: "Brian West manages Sumedha Air's financial health, growth strategy, and investor relations, ensuring strong and sustainable business operations.",
+        },
+        "stephanie-pope": {
+          name: "Stephanie Pope",
+          img: "./assets/stephanie.jpg",
+          role: "Executive Vice President<br>President and Chief Executive Officer,<br>Boeing Commercial Airplanes",
+          bio: "Stephanie Pope leads the commercial airplane division, driving progress in fleet expansion and operational excellence across the business.",
+        },
+        // Add more members as needed
+      };
+
+      // Get member from URL
+      function getQueryParam(param) {
+        return new URLSearchParams(window.location.search).get(param);
+      }
+
+      // Render profile
+      function renderProfile() {
+        const memberKey = getQueryParam("member");
+        const member = teamMembers[memberKey];
+        const profileDiv = document.getElementById("profile-content");
+        if (!member) {
+          profileDiv.innerHTML =
+            "<div class='text-red-500'>Profile not found.</div>";
+          return;
+        }
+        profileDiv.innerHTML = `
+        <img src="${member.img}" alt="${member.name}" class="w-96 h-96 object-cover  shadow" />
+        <div>
+          <h1 class="text-4xl font-bold text-[#374151] mb-2 hero-title">${member.name}</h1>
+          <h2 class="text-xl text-[#DFA958] font-semibold mb-4 title">${member.role}</h2>
+          <p class="text-gray-600 text-lg mb-4 title font-normal">${member.bio}</p>
+        </div>
+      `;
+      }
+
+      renderProfile();
+    </script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/otherNav.js"></script>
+  </body>
+</html>
