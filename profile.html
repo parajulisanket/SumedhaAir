@@ -7,13 +7,16 @@
     <title>Executive Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body class="bg-white min-h-screen">
-    <!-- NAVBAR  -->
     <header class="relative z-50">
       <nav
         id="mainNav"
-        class="fixed top-0 left-0 w-full transition-all duration-300 bg-transparent text-white z-50"
+        class="fixed top-0 left-0 w-full transition-all duration-300 bg-white text-gray-900 z-50 shadow"
       >
         <div
           class="max-w-7xl mx-auto flex items-center justify-between w-full px-6 py-5"
@@ -22,16 +25,12 @@
             <img
               src="./assets/logo1.png"
               alt="Logo"
-              class="logo-white block h-16 w-auto cursor-pointer"
-            />
-            <img
-              src="./assets/logo1.png"
-              alt="Logo"
-              class="logo-black hidden h-16 w-auto cursor-pointer"
+              class="block h-16 w-auto cursor-pointer"
             />
           </a>
-
+          <!-- Desktop nav -->
           <ul class="hidden md:flex items-center gap-10 nav">
+            <!-- ...nav links as before... -->
             <li>
               <a
                 href="./index.html"
@@ -39,28 +38,10 @@
                 >Home</a
               >
             </li>
-            <li class="relative group">
-              <a
-                href="#"
-                class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide"
+            <li>
+              <a href="#" class="hover:text-[#E0972A] transition tracking-wide"
+                >Heli Tours</a
               >
-                Heli Tours
-                <i class="fa-solid fa-angle-down"></i>
-              </a>
-              <div
-                class="absolute left-0 mt-2 w-40 bg-white rounded shadow-md hidden group-hover:block"
-              >
-                <a
-                  href="#everest-tour"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                  >Everest Tour</a
-                >
-                <a
-                  href="#annapurna-tour"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                  >Annapurna Tour</a
-                >
-              </div>
             </li>
             <li>
               <a
@@ -98,124 +79,129 @@
               >
             </li>
           </ul>
-          <!-- Mobile Menu -->
-          <div class="md:hidden">
-            <button id="menu-btn" class="focus:outline-none">
-              <svg
-                class="w-7 h-7"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+          <!-- Hamburger menu button for mobile -->
+          <button
+            id="menu-btn"
+            class="md:hidden flex items-center justify-center focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8 text-[#DFA958]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <!-- Mobile menu (unchanged) -->
+          <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40"
+              id="menu-overlay"
+            ></div>
+            <div
+              class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
+              id="menu-panel"
+              style="transform: translateX(-100%)"
+            >
+              <div class="px-4">
+                <a href="/index.html">
+                  <img
+                    src="./assets/logo1.png"
+                    alt="Logo"
+                    class="h-12 w-auto cursor-pointer mb-3"
+                  />
+                </a>
+                <button
+                  id="close-menu"
+                  class="absolute top-8 right-10 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+                  aria-label="Close Menu"
+                >
+                  &times;
+                </button>
+              </div>
+              <hr class="border border-[#DFA958] mt-5" />
+              <nav class="flex flex-col gap-6 text-left mt-10">
+                <!-- ...repeat your nav links here... -->
+                <a
+                  href="/index.html"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-house text-[#DFA958]"></i> Home
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-helicopter text-[#DFA958]"></i> Heli
+                  Tours
+                </a>
+                <a
+                  href="./services.html"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-concierge-bell text-[#DFA958]"></i>
+                  Services
+                </a>
+                <a
+                  href="./ourFleet.html"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-plane-departure text-[#DFA958]"></i> Our
+                  Fleet
+                </a>
+                <a
+                  href="./about.html"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-circle-info text-[#DFA958]"></i> About
+                  Us
+                </a>
+                <a
+                  href="./team.html"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-user-group text-[#DFA958]"></i> Team
+                </a>
+                <a
+                  href="./contactUs.html"
+                  class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+                >
+                  <i class="fa-solid fa-phone text-[#DFA958]"></i> Contact
+                </a>
+                <div class="mt-auto pt-10">
+                  <a
+                    href="/book.html"
+                    class="bg-[#DFA958] text-2xl text-white font-semibold text-center py-3 block hover:bg-[#e0a84e] transition"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
       </nav>
-
-      <!-- hr line  -->
       <hr class="border-[#FAF9F8]/20 mt-[95px]" />
-
-      <!-- Mobile Menu Overlay -->
-      <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
-        <div
-          class="absolute inset-0 bg-black bg-opacity-40"
-          id="menu-overlay"
-        ></div>
-        <div
-          class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
-          id="menu-panel"
-          style="transform: translateX(-100%)"
-        >
-          <div class="px-4">
-            <a href="/index.html">
-              <img
-                src="./assets/logo1.png"
-                alt="Logo"
-                class="h-12 w-auto cursor-pointer mb-3"
-              />
-            </a>
-            <button
-              id="close-menu"
-              class="absolute top-8 right-10 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
-              aria-label="Close Menu"
-            >
-              &times;
-            </button>
-          </div>
-          <hr class="border border-[#DFA958] mt-5" />
-          <nav class="flex flex-col gap-6 text-left mt-10">
-            <a
-              href="/index.html"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-house text-[#DFA958]"></i> Home
-            </a>
-            <a
-              href="#"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-helicopter text-[#DFA958]"></i>
-              Heli Tours
-            </a>
-            <a
-              href="./services.html"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-concierge-bell text-[#DFA958]"></i>
-              Services
-            </a>
-
-            <a
-              href="./ourFleet.html"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-plane-departure text-[#DFA958]"></i>
-              Our Fleet
-            </a>
-
-            <a
-              href="./about.html"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-circle-info text-[#DFA958]"></i>
-              About Us
-            </a>
-            <a
-              href="./team.html"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-user-group text-[#DFA958]"></i>
-              Team
-            </a>
-
-            <a
-              href="./contactUs.html"
-              class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
-            >
-              <i class="fa-solid fa-phone text-[#DFA958]"></i>
-              Contact
-            </a>
-
-            <div class="mt-auto pt-10">
-              <a
-                href="/book.html"
-                class="bg-[#DFA958] text-2xl text-white font-semibold text-center py-3 block hover:bg-[#e0a84e] transition"
-              >
-                Book Now
-              </a>
-            </div>
-          </nav>
-        </div>
-      </div>
     </header>
-    <main class="max-w-7xl mx-auto py-16 px-4">
-      <div
-        id="profile-content"
-        class="flex flex-col md:flex-row items-start gap-10"
-      ></div>
+
+    <main class="max-w-7xl mx-auto px-6 pt-24 pb-16">
+      <h1
+        class="text-4xl title font-normal text-[#374151] mb-14 text-left tracking-tight"
+      >
+        Executive Biography<span id="exec-name-heading"></span>
+      </h1>
+      <div id="profile-content"></div>
+      <div class="mt-10 flex justify-center">
+        <a
+          href="./team.html"
+          class="text-[#DFA958] text-lg font-semibold hover:underline"
+        >
+          &larr; Back to Team
+        </a>
+      </div>
     </main>
+
     <!-- footer -->
     <footer
       class="bg-[#23262A] text-white pt-12 pb-5 relative border-t border-gray-700 overflow-hidden"
@@ -243,7 +229,9 @@
           <!-- Navigation -->
           <ul class="flex flex-wrap gap-8 text-lg font-medium">
             <li>
-              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
+              <a href="./index.html" class="hover:text-[#E0972A] transition nav"
+                >Home</a
+              >
             </li>
             <li>
               <a href="#" class="hover:text-[#E0972A] transition nav"
@@ -275,7 +263,9 @@
               >
             </li>
             <li>
-              <a href="#" class="hover:text-[#E0972A] transition nav"
+              <a
+                href="/contactUs.html"
+                class="hover:text-[#E0972A] transition nav"
                 >Contact</a
               >
             </li>
@@ -299,7 +289,7 @@
           <div>
             <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
             <p class="text-white text-base mb-2 title font-normal">
-              +977 986542789<br />
+              +977 986542789 <br />
               info@sumedhaair.com
             </p>
           </div>
@@ -323,7 +313,7 @@
         <!-- Divider -->
         <div class="border-t border-gray-600 mb-4"></div>
 
-        <!-- Bottom - Copyright + Socials -->
+        <!-- Bottom: Copyright & Socials -->
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
         >
@@ -357,21 +347,35 @@
         </div>
       </div>
     </footer>
-
+    <script src="./scripts/index.js"></script>
     <script>
       // Team member data (add all your members here)
       const teamMembers = {
-        "pramod-raj-sedhain": {
-          name: "Pramod Raj Sedhain",
-          img: "./assets/team-img1.jpg",
-          role: "President and Chief Executive Officer",
-          bio: "Pramod Raj Sedhain leads Sumedha Air with a passion for aviation and a commitment to operational excellence. With over 20 years in the industry, he is the driving force behind our mission and vision.",
+        "niraj-shrestha": {
+          name: "Dr. Niraj Govinda Shrestha",
+          img: "./assets/niraj-shrestha.jpeg",
+          role: "Chairman",
+          bio: `Dr. Niraj Govinda Shrestha is the Chairman and Founder of Sumedha Air, a visionary initiative aimed at transforming Nepal’s aviation sector. With a mission to lead and modernize helicopter services in the country, Dr. Shrestha brings his decades-long experience in industrial manufacturing, infrastructure, banking, and international trade to the skies.
+          <br><br>
+          A dynamic and results-driven business leader, Dr. Shrestha has consistently demonstrated a capacity to unite technical expertise with high-level strategic investment. With a strong foundation in civil and irrigation engineering, his career spans continents—merging engineering knowledge with entrepreneurial vision to drive impactful growth across multiple sectors. Today, through Sumedha Air, he is committed to elevating Nepal’s aviation capabilities, expanding access to remote areas, and setting new standards for operational excellence, safety, and innovation.
+          <br><br>
+          Educated in the former Soviet Union, he holds a PhD in Irrigation Systems and a Master’s degree in Civil Engineering, specializing in bridge and tunnel construction. His early training at Pulchowk Engineering Campus and schooling in Tansen, Palpa, laid the groundwork for a lifelong commitment to national development. Over the years, he has played a transformative role in several industrial collaborations, particularly with Belarusian heavy machinery manufacturers such as Amkodor and Elizer, helping introduce advanced agricultural and construction technology to South Asia. In the banking and finance sector, he is a founding promoter and shareholder of Sanima Bank and Sanima Hydro, contributing significantly to Nepal’s financial modernization and energy independence. His international business ventures are equally wide-ranging. As Chairman of Buddha Lumbini Group in Spain and owner of Evita Pvt. Ltd. in Nepal, he has helped build bridges between Nepal and global markets. He has been instrumental in the development of institutions like Medicare Hospital and Kantipur Television, combining healthcare and media impact with economic foresight.
+          <br><br>
+          Through his company Vostok International Pvt. Ltd., he continues to coordinate international trade and investment, focusing on sectors that support Nepal’s long-term sustainability and competitiveness. In recent years, his leadership has expanded into Nepal’s growing aviation sector. Recognizing the strategic importance of helicopters for rescue, tourism, remote connectivity, and logistics, he has been actively involved in laying the groundwork for a new era of aviation services in Nepal. Through direct partnerships with international aviation institutions and manufacturers, he is helping bring world-class standards and operational capabilities to the country.
+          <br><br>
+          His goal is to not only support safe and efficient helicopter services, but also to make Nepal a regional hub for high-altitude aviation excellence.  Beyond business, his contributions to social welfare are well recognized. He serves as the Goodwill Ambassador of Nepal for Peace (2023–2027) and is the Chief Patron of the Lumbini Garden Foundation in both Nepal and Spain. His philanthropic work includes the establishment and support of institutions such as Devghat Elderly Home, Shankhamul Park in Kathmandu, and the restoration of the Nishan Mandir in Palpa. Guided by his deep commitment to promoting Buddha’s teachings and Nepal’s spiritual heritage, he remains focused on global peace initiatives and cultural diplomacy. Fluent in Nepali, Russian, Newari, and English, he continues to advocate for innovation, investment, and integrity—working across agriculture, tourism, energy, healthcare, and now aviation—to drive Nepal’s development into a sustainable, globally respected economy.`,
         },
         "brian-west": {
-          name: "Brian West",
-          img: "./assets/brian.jpg",
-          role: "Chief Financial Officer<br>Executive Vice President, Finance",
-          bio: "Brian West manages Sumedha Air's financial health, growth strategy, and investor relations, ensuring strong and sustainable business operations.",
+          name: "Govinda Prasad Subedi",
+          img: "./assets/govinda-prasad.jpeg",
+          role: "Director of Sumedha Air",
+          bio: `Mr. Govinda Prasad Subedi is the Director of Sumedha Air, where he plays a leading role in advancing Nepal’s aviation landscape through strategic vision, tourism integration, and international collaboration. With a background in business leadership and deep expertise in the tourism and hospitality industry, Mr. Subedi brings a unique ability to bridge aviation development with destination promotion. His involvement in Sumedha Air reflects his commitment to enhancing Nepal’s air connectivity—particularly through helicopter services aimed at supporting tourism, rescue operations, and remote area access.
+          <br><br>
+          Over the past two decades, Mr. Subedi has established himself as a trusted name in global tourism and business. He serves as Director and Managing Director of the Buddha Lumbini Group in Spain and Nepal, where he has led successful initiatives to promote Buddhist pilgrimage tourism, attract foreign investment, and build long-term international partnerships. He is also a founding shareholder of WK Football Club, fostering sports diplomacy and youth engagement across borders.
+          <br><br>
+          A dedicated advocate for Nepal’s cultural and spiritual heritage, Mr. Subedi serves as Vice President of the Lumbini Garden Foundation in Spain and as a patron of its Nepal chapter. His work in these roles focuses on cultural preservation, peace promotion, and sustainable tourism development. He is also an active member of the Non-Resident Nepali Association (NRNA), contributing to Nepal’s diaspora engagement and investment networks.
+          <br><br>
+          Educated at Tribhuvan University, where he earned both his bachelor’s and master’s degrees, Mr. Subedi is originally from Kushma, Parbat. His extensive travel across Europe, the Middle East, and Asia has further shaped his global outlook and deepened his commitment to positioning Nepal as a leading destination for tourism, heritage, and now aviation innovation.`,
         },
         "stephanie-pope": {
           name: "Stephanie Pope",
@@ -379,37 +383,42 @@
           role: "Executive Vice President<br>President and Chief Executive Officer,<br>Boeing Commercial Airplanes",
           bio: "Stephanie Pope leads the commercial airplane division, driving progress in fleet expansion and operational excellence across the business.",
         },
-        // Add more members as needed
       };
 
-      // Get member from URL
       function getQueryParam(param) {
         return new URLSearchParams(window.location.search).get(param);
       }
 
-      // Render profile
       function renderProfile() {
         const memberKey = getQueryParam("member");
         const member = teamMembers[memberKey];
         const profileDiv = document.getElementById("profile-content");
+        const headingSpan = document.getElementById("exec-name-heading");
         if (!member) {
+          headingSpan.innerHTML = "";
           profileDiv.innerHTML =
-            "<div class='text-red-500'>Profile not found.</div>";
+            "<div class='text-red-500 text-center text-2xl font-bold py-16'>Profile not found.</div>";
           return;
         }
+        headingSpan.innerHTML = ` of ${member.name}`;
         profileDiv.innerHTML = `
-        <img src="${member.img}" alt="${member.name}" class="w-96 h-96 object-cover  shadow" />
-        <div>
-          <h1 class="text-4xl font-bold text-[#374151] mb-2 hero-title">${member.name}</h1>
-          <h2 class="text-xl text-[#DFA958] font-semibold mb-4 title">${member.role}</h2>
-          <p class="text-gray-600 text-lg mb-4 title font-normal">${member.bio}</p>
+        <div class="flex flex-col md:flex-row items-start md:items-start gap-36">
+          <div class="flex-shrink-0 flex flex-col items-center md:items-start w-full md:w-[350px]">
+            <img src="${member.img}" alt="${member.name}" class="w-[350px] h-[400px] object-cover  mb-6" />
+            <div class="mt-2">
+              <h2 class="text-2xl font-medium text-[#374151] mb-2">${member.name}</h2>
+              <p class="text-lg text-[#374151] font-normal">${member.role}</p>
+            </div>
+          </div>
+          <div class="w-full text-left font-normal title">
+            <div class="text-gray-700 text-lg leading-relaxed" style="max-width:900px">${member.bio}</div>
+          </div>
         </div>
-      `;
+        `;
       }
 
       renderProfile();
     </script>
-    <script src="./scripts/index.js"></script>
     <script src="./scripts/otherNav.js"></script>
   </body>
 </html>
