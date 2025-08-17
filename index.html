@@ -21,11 +21,13 @@
       <!-- Background Image -->
       <div class="absolute inset-0 z-0">
         <img
-          src="./assets/hero-background.png"
+          src="./assets/main-hero1.png"
           alt="Heli Tour Nepal"
           class="w-full h-full object-cover"
         />
       </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+
 
       <!-- NAVBAR  -->
       <header class="relative z-50">
@@ -38,7 +40,7 @@
           >
             <a href="/index.html">
               <img
-                src="./assets/logo.png"
+                src="./assets/logo1.png"
                 alt="Logo"
                 class="logo-white block h-16 w-auto cursor-pointer"
               />
@@ -866,6 +868,19 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
       </div>
     </section>
 
+    <!-- safety banner -->
+    <section class="bg-gray-600 text-white py-16 px-6 text-center">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4 title text-[#DFA958]">Safety First</h2>
+        <p class="text-5xl mb-6 hero-title leading-tight">Your Safety is Our Mission</p>
+          <p class="max-w-3xl mx-auto text-base md:text-lg opacity-80">
+            At Sumedha Air, safety isn’t just a requirement—it’s a culture. 
+            We operate with strict adherence to national and international aviation standards. 
+            Our pilots are highly experienced in high-altitude flight operations, 
+            and our aircraft undergo regular maintenance by certified engineers.
+          </p>
+    </section>
+
+
     <!-- why us part -->
     <section class="bg-[#FAF9F8] py-20 px-0 md:px-6">
       <div class="max-w-7xl mx-auto px-6">
@@ -900,10 +915,7 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
               <p
                 class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
               >
-                Experience our state-of-the-art fleet, highlighted by the Airbus
-                H125, meticulously engineered for exceptional performance and
-                reliability in extreme environments, ensuring safety and comfort
-                on every flight.
+                Featuring the Airbus H125—built for performance in extreme environments
               </p>
             </div>
           </div>
@@ -922,10 +934,7 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
               <p
                 class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
               >
-                We offer fully customized flight plans designed for tourism,
-                business travel, and emergency response, providing flexible,
-                client-focused helicopter services to meet diverse needs and
-                special requirements.
+               Customized flight plans for tourism, business, and emergencies
               </p>
             </div>
           </div>
@@ -945,10 +954,7 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
               <p
                 class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
               >
-                Our team possesses unmatched knowledge of Nepal’s complex
-                terrain, challenging weather patterns, and intricate air routes,
-                delivering superior navigation, safe operations, and informed
-                in-flight decision-making.
+                Deep knowledge of Nepal’s terrain, weather, and air routes
               </p>
             </div>
           </div>
@@ -961,15 +967,12 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
               <h3
                 class="text-3xl text-gray-900 mb-3 leading-snug hero-title font-thin"
               >
-                Flight Safety
+                Uncompromised Safety
               </h3>
               <p
                 class="text-gray-700 text-base leading-relaxed font-normal title tracking-wide"
               >
-                Safety is our top priority, maintained through strict protocols,
-                the latest technology, and a team of highly skilled
-                professionals dedicated to secure, reliable, and comfortable
-                journeys.
+               Advanced safety protocols and skilled professionals
               </p>
             </div>
           </div>
@@ -1004,11 +1007,7 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Full Name -->
             <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/book-user.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
+           <i class="fa-solid fa-user text-yellow-500 mr-3 text-xl"></i>
               <input
                 type="text"
                 placeholder="Full Name"
@@ -1018,11 +1017,7 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
 
             <!-- Phone Number -->
             <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/phone-icon.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
+              <i class="fa-solid fa-phone text-yellow-500 mr-3 text-xl"></i>
               <input
                 type="text"
                 placeholder="Phone Number"
@@ -1038,71 +1033,24 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
                 class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
               />
             </div>
-            <!-- Passengers -->
+            <!-- type of -->
             <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/passanger-icon.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
-              <input
-                type="number"
-                placeholder="No. of Passengers"
-                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
-              />
-            </div>
-            <!-- Fly From -->
-            <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/fly-icon.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
+             <i class="fa-solid fa-search text-yellow-500 mr-3 text-xl"></i>
               <input
                 type="text"
-                placeholder="Fly From"
+                placeholder="Type of Inquiry"
                 class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
               />
             </div>
-            <!-- Fly To -->
-            <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/fly-to-icon.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
-              <input
-                type="text"
-                placeholder="Fly To"
-                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
-              />
-            </div>
-            <!-- Departure Date -->
-            <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/date-icon.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
-              <input
-                type="date"
-                placeholder="Departure Date"
-                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
-              />
-            </div>
-            <!-- Arrival Date -->
-            <div class="flex items-center bg-white shadow px-4 py-4">
-              <img
-                src="./assets/date-icon.png"
-                class="w-6 h-6 text-yellow-500 mr-3"
-                alt=""
-              />
-              <input
-                type="date"
-                placeholder="Arrival Date"
-                class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500"
-              />
-            </div>
+          </div>
+           <!-- text-area -->
+            <div class="mt-6 col-span-2 flex items-start bg-white shadow px-4 py-4">
+            <i class="fa-solid fa-message text-yellow-500 mr-3 text-xl"></i>
+            <textarea
+              placeholder="Ask your questions here"
+              rows="6"
+              class="w-full bg-transparent outline-none text-gray-800 placeholder-gray-500 resize-none"
+            ></textarea>
           </div>
           <!-- Book Button -->
           <div class="flex justify-center mt-8">
@@ -1265,7 +1213,7 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
               <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
             </li>
             <li class="hidden md:block">
-              <a href="#" class="hover:text-[#E0972A] transition nav"
+              <a href="./heliTours.html" class="hover:text-[#E0972A] transition nav"
                 >Heli Tours</a
               >
             </li>
@@ -1286,6 +1234,11 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
             <li>
               <a href="./about.html" class="hover:text-[#E0972A] transition nav"
                 >About Us</a
+              >
+            </li>
+            <li>
+              <a href="./blogs.html" class="hover:text-[#E0972A] transition nav"
+                >Blogs</a
               >
             </li>
             <li>
@@ -1326,8 +1279,8 @@ Flying over the Annapurna region was an absolutely surreal adventure. The majest
           <div>
             <h4 class="text-2xl font-thin hero-title mb-3">Address</h4>
             <p class="text-white text-base title font-normal">
-              New Baneshwor, Eyeplex Mall<br />
-              Kathmandu
+              Durbarmarg, Kathmandu<br />
+              Nepal
             </p>
           </div>
           <!-- Working Hour -->
