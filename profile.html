@@ -30,7 +30,6 @@
           </a>
           <!-- Desktop nav -->
           <ul class="hidden md:flex items-center gap-10 nav">
-            <!-- ...nav links as before... -->
             <li>
               <a
                 href="./index.html"
@@ -39,7 +38,9 @@
               >
             </li>
             <li>
-              <a href="#" class="hover:text-[#E0972A] transition tracking-wide"
+              <a
+                href="./heliTours.html"
+                class="hover:text-[#E0972A] transition tracking-wide"
                 >Heli Tours</a
               >
             </li>
@@ -122,7 +123,6 @@
               </div>
               <hr class="border border-[#DFA958] mt-5" />
               <nav class="flex flex-col gap-6 text-left mt-10">
-                <!-- ...repeat your nav links here... -->
                 <a
                   href="/index.html"
                   class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
@@ -130,7 +130,7 @@
                   <i class="fa-solid fa-house text-[#DFA958]"></i> Home
                 </a>
                 <a
-                  href="#"
+                  href="./heliTours.html"
                   class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
                 >
                   <i class="fa-solid fa-helicopter text-[#DFA958]"></i> Heli
@@ -228,10 +228,8 @@
           </div>
           <!-- Navigation -->
           <ul class="flex flex-wrap gap-4 md:gap-8 text-lg font-medium">
-            <li>
-              <a href="./index.html" class="hover:text-[#E0972A] transition nav"
-                >Home</a
-              >
+            <li class="hidden md:block">
+              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
             </li>
             <li class="hidden md:block">
               <a href="#" class="hover:text-[#E0972A] transition nav"
@@ -257,15 +255,14 @@
                 >About Us</a
               >
             </li>
-            <li class="hidden md:block">
+            <li>
               <a href="./team.html" class="hover:text-[#E0972A] transition nav"
                 >Team</a
               >
             </li>
+
             <li class="hidden md:block">
-              <a
-                href="/contactUs.html"
-                class="hover:text-[#E0972A] transition nav"
+              <a href="#" class="hover:text-[#E0972A] transition nav"
                 >Contact</a
               >
             </li>
@@ -276,20 +273,23 @@
         <div class="border-t border-gray-600 mb-8"></div>
 
         <!-- Info Row -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+        <div
+          class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-8"
+        >
           <!-- Overview -->
-          <div>
-            <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4>
-            <p class="text-white text-base title font-normal">
-              Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
-              Stringent International Safety Protocols...
+          <div class="mb-3">
+            <!-- <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4> -->
+            <p class="text-white text-base title font-normal max-w-xs">
+              At Sumedha Air, safety isn’t just a requirement—it’s a culture. We
+              operate with strict adherence to national and international
+              aviation standards.
             </p>
           </div>
           <!-- Contact Info -->
           <div>
             <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
             <p class="text-white text-base mb-2 title font-normal">
-              +977 986542789 <br />
+              +977 986542789<br />
               info@sumedhaair.com
             </p>
           </div>
@@ -302,18 +302,18 @@
             </p>
           </div>
           <!-- Working Hour -->
-          <div>
+          <!-- <div>
             <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
             <p class="text-white text-base title font-normal">
               9 AM - 6 PM<br />Sun - Fri
             </p>
-          </div>
+          </div> -->
         </div>
 
         <!-- Divider -->
         <div class="border-t border-gray-600 mb-4"></div>
 
-        <!-- Bottom: Copyright & Socials -->
+        <!-- Bottom - Copyright + Socials -->
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
         >

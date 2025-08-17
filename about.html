@@ -48,28 +48,13 @@
                   >Home</a
                 >
               </li>
-              <li class="relative group">
+              <li>
                 <a
-                  href="#"
+                  href="./heliTours.html"
                   class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide text-[#DFA958]"
                 >
                   Heli Tours
-                  <i class="fa-solid fa-angle-down"></i>
                 </a>
-                <div
-                  class="absolute left-0 mt-2 w-40 bg-white rounded shadow-md hidden group-hover:block"
-                >
-                  <a
-                    href="#everest-tour"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                    >Everest Tour</a
-                  >
-                  <a
-                    href="#annapurna-tour"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                    >Annapurna Tour</a
-                  >
-                </div>
               </li>
               <li>
                 <a
@@ -351,10 +336,8 @@
           </div>
           <!-- Navigation -->
           <ul class="flex flex-wrap gap-4 md:gap-8 text-lg font-medium">
-            <li>
-              <a href="./index.html" class="hover:text-[#E0972A] transition nav"
-                >Home</a
-              >
+            <li class="hidden md:block">
+              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
             </li>
             <li class="hidden md:block">
               <a href="#" class="hover:text-[#E0972A] transition nav"
@@ -375,7 +358,7 @@
                 >Our Fleet</a
               >
             </li>
-            <li class="hidden md:block">
+            <li>
               <a href="./about.html" class="hover:text-[#E0972A] transition nav"
                 >About Us</a
               >
@@ -385,10 +368,9 @@
                 >Team</a
               >
             </li>
+
             <li class="hidden md:block">
-              <a
-                href="./contactUs.html"
-                class="hover:text-[#E0972A] transition nav"
+              <a href="#" class="hover:text-[#E0972A] transition nav"
                 >Contact</a
               >
             </li>
@@ -399,20 +381,23 @@
         <div class="border-t border-gray-600 mb-8"></div>
 
         <!-- Info Row -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+        <div
+          class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-8"
+        >
           <!-- Overview -->
-          <div>
-            <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4>
-            <p class="text-white text-base title font-normal">
-              Your Peace Of Mind Is Our Utmost Priority. We Adhere To The Most
-              Stringent International Safety Protocols...
+          <div class="mb-3">
+            <!-- <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4> -->
+            <p class="text-white text-base title font-normal max-w-xs">
+              At Sumedha Air, safety isn’t just a requirement—it’s a culture. We
+              operate with strict adherence to national and international
+              aviation standards.
             </p>
           </div>
           <!-- Contact Info -->
           <div>
             <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
             <p class="text-white text-base mb-2 title font-normal">
-              +977 986542789 <br />
+              +977 986542789<br />
               info@sumedhaair.com
             </p>
           </div>
@@ -425,18 +410,18 @@
             </p>
           </div>
           <!-- Working Hour -->
-          <div>
+          <!-- <div>
             <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
             <p class="text-white text-base title font-normal">
               9 AM - 6 PM<br />Sun - Fri
             </p>
-          </div>
+          </div> -->
         </div>
 
         <!-- Divider -->
         <div class="border-t border-gray-600 mb-4"></div>
 
-        <!-- Bottom: Copyright & Socials -->
+        <!-- Bottom - Copyright + Socials -->
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
         >
