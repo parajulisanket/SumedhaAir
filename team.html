@@ -241,7 +241,28 @@
       <!-- TEAM SECTION  -->
       <section class="py-16" id="team">
         <div class="max-w-7xl mx-auto px-4">
+          <!-- Toggle Buttons -->
+          <div class="flex justify-center gap-4 mb-6">
+            <button
+              id="leadershipBtn"
+              class="px-4 py-2 font-semibold bg-yellow-500 text-white"
+              aria-pressed="true"
+            >
+              Leadership
+            </button>
+            <button
+              id="pilotsBtn"
+              class="px-4 py-2 font-semibold bg-white text-yellow-500 border border-yellow-500"
+              aria-pressed="false"
+            >
+              Pilots
+            </button>
+          </div>
+
+          <!-- leadership -->
+
           <div
+            id="leadership"
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12"
           >
             <!-- Team Member 1 -->
@@ -262,6 +283,7 @@
                 Chairman of Sumedha Air
               </div>
             </a>
+
             <!-- Team Member 2 -->
             <a
               href="profile.html?member=govinda-prasad"
@@ -280,6 +302,7 @@
                 Director of Sumedha Air
               </div>
             </a>
+
             <!-- Team Member 3 -->
             <a
               href="profile.html?member=pramod-sedhain"
@@ -298,6 +321,7 @@
                 Director of Sumedha Air
               </div>
             </a>
+
             <!-- Team Member 4 -->
             <a
               href="profile.html?member=eakraj-giri"
@@ -316,6 +340,7 @@
                 Director of Sumedha Air
               </div>
             </a>
+
             <!-- Team Member 5 -->
             <a
               href="profile.html?member=naresh-shrestha"
@@ -332,6 +357,48 @@
               </h3>
               <div class="text-lg text-[#374151] font-normal leading-relaxed">
                 Director of Sumedha Air
+              </div>
+            </a>
+          </div>
+
+          <!-- Pilots  -->
+          <div
+            id="pilots"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12 hidden"
+          >
+            <a
+              href="profile.html?member=pilot-1"
+              class="flex flex-col group"
+              target="_blank"
+            >
+              <img
+                src="./assets/about-image3.png"
+                alt=""
+                class="w-full aspect-square object-cover mb-6"
+              />
+              <h3 class="text-2xl font-semibold text-[#374151] mb-2">
+                Capt. A. Sharma
+              </h3>
+              <div class="text-lg text-[#374151] font-normal leading-relaxed">
+                Senior Pilot
+              </div>
+            </a>
+
+            <a
+              href="profile.html?member=pilot-2"
+              class="flex flex-col group"
+              target="_blank"
+            >
+              <img
+                src="./assets/pilot-2.jpg"
+                alt=""
+                class="w-full aspect-square object-cover mb-6"
+              />
+              <h3 class="text-2xl font-semibold text-[#374151] mb-2">
+                Capt. B. Thapa
+              </h3>
+              <div class="text-lg text-[#374151] font-normal leading-relaxed">
+                First Officer
               </div>
             </a>
           </div>
@@ -487,6 +554,41 @@
     </footer>
 
     <!-- script part  -->
+    <script>
+      const leadershipBtn = document.getElementById("leadershipBtn");
+      const pilotsBtn = document.getElementById("pilotsBtn");
+      const leadership = document.getElementById("leadership");
+      const pilots = document.getElementById("pilots");
+
+      function setActive(activeBtn, inactiveBtn, showSection, hideSection) {
+        activeBtn.classList.add("bg-yellow-500", "text-white");
+        activeBtn.classList.remove(
+          "bg-white",
+          "text-yellow-500",
+          "border",
+          "border-yellow-500"
+        );
+
+        inactiveBtn.classList.add(
+          "bg-white",
+          "text-yellow-500",
+          "border",
+          "border-yellow-500"
+        );
+        inactiveBtn.classList.remove("bg-yellow-500", "text-white");
+
+        showSection.classList.remove("hidden");
+        hideSection.classList.add("hidden");
+      }
+
+      leadershipBtn.addEventListener("click", () => {
+        setActive(leadershipBtn, pilotsBtn, leadership, pilots);
+      });
+
+      pilotsBtn.addEventListener("click", () => {
+        setActive(pilotsBtn, leadershipBtn, pilots, leadership);
+      });
+    </script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/otherNav.js"></script>
   </body>
