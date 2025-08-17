@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo1.png" type="image/png" />
+    <title>Sumedha Air | Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="relative min-h-screen bg-[#FAF9F6]">
+    <!-- hero part  -->
+    <section
+      id="hero"
+      class="relative min-h-[90vh] md:min-h-[100vh] overflow-hidden flex flex-col"
+    >
+      <!-- Navbar  -->
+      <header class="relative z-50">
+        <nav
+          id="mainNav"
+          class="fixed top-0 left-0 w-full transition-all duration-300 bg-[#FAF9F6] text-white z-50"
+        >
+          <div
+            class="max-w-7xl mx-auto flex items-center justify-between w-full px-6 py-5"
+          >
+            <a href="./index.html">
+              <img
+                src="./assets/logo1.png"
+                alt="Logo"
+                class="logo-white block h-16 w-auto cursor-pointer"
+              />
+              <img
+                src="./assets/logo1.png"
+                alt="Logo"
+                class="logo-black hidden h-16 w-auto cursor-pointer"
+              />
+            </a>
+
+            <ul class="hidden md:flex items-center gap-10 nav">
+              <li>
+                <a
+                  href="/index.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Home</a
+                >
+              </li>
+              <li class="relative group">
+                <a
+                  href="./heliTours.html"
+                  class="hover:text-[#E0972A] transition flex items-center gap-2 tracking-wide text-[#DFA958]"
+                >
+                  Heli Tours
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ourFleet.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Our Fleet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/blogs.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/team.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contactUs.html"
+                  class="hover:text-[#E0972A] transition tracking-wide text-[#DFA958]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+              <button id="menu-btn" class="focus:outline-none">
+                <svg
+                  class="w-7 h-7 text-[#DFA958]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hr line  -->
+        <hr class="border-[#FAF9F8]/20 mt-[85px]" />
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="md:hidden fixed inset-0 z-[1000] hidden">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40"
+            id="menu-overlay"
+          ></div>
+          <div
+            class="relative h-full w-full bg-white flex flex-col pt-6 pb-8 px-6 transition-transform duration-300 ease-in-out"
+            id="menu-panel"
+            style="transform: translateX(-100%)"
+          >
+            <div class="px-4">
+              <a href="/index.html">
+                <img
+                  src="./assets/logo1.png"
+                  alt="Logo"
+                  class="h-12 w-auto cursor-pointer mb-3"
+                />
+              </a>
+              <button
+                id="close-menu"
+                class="absolute top-8 right-10 text-3xl text-gray-500 hover:text-red-500 focus:outline-none"
+                aria-label="Close Menu"
+              >
+                &times;
+              </button>
+            </div>
+            <hr class="border border-[#DFA958] mt-5" />
+            <nav class="flex flex-col gap-6 text-left mt-10">
+              <a
+                href="/index.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-house text-[#DFA958]"></i> Home
+              </a>
+              <a
+                href="./heliTours.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-helicopter text-[#DFA958]"></i>
+                Heli Tours
+              </a>
+              <a
+                href="./services.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-concierge-bell text-[#DFA958]"></i>
+                Services
+              </a>
+
+              <a
+                href="./ourFleet.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-plane-departure text-[#DFA958]"></i>
+                Our Fleet
+              </a>
+
+              <a
+                href="./about.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-circle-info text-[#DFA958]"></i>
+                About Us
+              </a>
+              <a
+                href="./blogs.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-blog text-[#DFA958]"></i>
+                Blogs
+              </a>
+              <a
+                href="./team.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-user-group text-[#DFA958]"></i>
+                Team
+              </a>
+
+              <a
+                href="./contactUs.html"
+                class="flex items-center gap-6 text-2xl font-semibold text-gray-500 hover:text-[#DFA958]"
+              >
+                <i class="fa-solid fa-phone text-[#DFA958]"></i>
+                Contact
+              </a>
+
+              <div class="mt-auto pt-10">
+                <a
+                  href="/book.html"
+                  class="bg-[#DFA958] text-2xl text-white font-semibold text-center py-3 block hover:bg-[#e0a84e] transition"
+                >
+                  Book Now
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- HERO BANNER -->
+      <section
+        class="relative h-[400px] md:h-[500px] flex items-center bg-cover bg-center mt-4"
+        style="background-image: url('./assets/blog-bg.jpg')"
+      >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full">
+          <div class="max-w-7xl mx-auto px-4 sm:px-8 py-10 text-left">
+            <h1
+              class="text-white text-2xl xs:text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg hero-title"
+            >
+              Latest Updates & Stories
+            </h1>
+            <p
+              class="text-[#DFA958] text-base xs:text-lg md:text-2xl font-medium mb-4 title"
+            >
+              Insights, Adventures & News from Sumedha Air
+            </p>
+            <p
+              class="text-white text-base xs:text-lg md:text-md font-normal opacity-90 leading-relaxed xs:leading-7 md:leading-tight title max-w-full md:max-w-2xl"
+            >
+              Stay connected with the skies. From breathtaking mountain flights
+              and safety innovations to company milestones and aviation
+              insights—our blog brings you stories that inspire, inform, and
+              elevate your journey with
+              <strong class="text-[#DFA958]">Sumedha Air</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 bg-[#FAF9F6]">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Header -->
+          <div
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8"
+          >
+            <div>
+              <h2 class="text-2xl md:text-3xl font-semibold hero-title">
+                From the Blog
+              </h2>
+              <p class="text-slate-600 mt-1 title">
+                Stories, safety insights, and news from Sumedha Air.
+              </p>
+            </div>
+
+            <!--  Filter & Search -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button
+                data-filter="all"
+                class="px-3 py-1 rounded-full border text-sm hover:bg-[#DFA958] hover:text-white transition blog-chip active"
+              >
+                All
+              </button>
+              <button
+                data-filter="destinations"
+                class="px-3 py-1 rounded-full border text-sm hover:bg-[#DFA958] hover:text-white transition blog-chip"
+              >
+                Destinations
+              </button>
+              <button
+                data-filter="safety"
+                class="px-3 py-1 rounded-full border text-sm hover:bg-[#DFA958] hover:text-white transition blog-chip"
+              >
+                Safety
+              </button>
+              <button
+                data-filter="fleet"
+                class="px-3 py-1 rounded-full border text-sm hover:bg-[#DFA958] hover:text-white transition blog-chip"
+              >
+                Fleet
+              </button>
+              <button
+                data-filter="news"
+                class="px-3 py-1 rounded-full border text-sm hover:bg-[#DFA958] hover:text-white transition blog-chip"
+              >
+                News
+              </button>
+
+              <div class="relative ml-2">
+                <input
+                  id="blog-search"
+                  type="text"
+                  placeholder="Search posts…"
+                  class="pl-10 pr-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-[#DFA958] bg-white"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid -->
+          <div id="blog-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- card 1-->
+            <article
+              class="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition hover:-translate-y-1"
+              data-category="destinations"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/blog-1.webp"
+                  alt="Everest sunrise flight"
+                  class="h-52 w-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 inline-flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Destinations
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Aug 2025</span>
+                </div>
+                <h3
+                  class="mt-2 text-lg font-semibold group-hover:text-[#DFA958] transition"
+                >
+                  Everest Sunrise: What to Expect on a High-Altitude Scenic
+                  Flight
+                </h3>
+                <p class="mt-2 text-slate-600 line-clamp-2">
+                  From golden light on Nuptse to sweeping views of Lhotse and
+                  Ama Dablam—here’s how to prepare for a lifetime memory.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/blog-1.webp"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full object-cover"
+                    />
+                    <span class="text-sm text-slate-700">Pema Sherpa</span>
+                  </div>
+                  <a
+                    href="./post-everest-sunrise.html"
+                    class="text-[#DFA958] font-semibold hover:underline"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article
+              class="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition hover:-translate-y-1"
+              data-category="safety"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/blog-2.jpeg"
+                  alt="Safety briefing"
+                  class="h-52 w-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 inline-flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full"
+                >
+                  <i class="fa-solid fa-shield-heart"></i> Safety
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Aug 2025</span>
+                </div>
+                <h3
+                  class="mt-2 text-lg font-semibold group-hover:text-[#DFA958] transition"
+                >
+                  Safety First: The Pre-Flight Checks Our Crew Never Skips
+                </h3>
+                <p class="mt-2 text-slate-600 line-clamp-2">
+                  A transparent look at our Airbus H125 procedures—from weather
+                  windows to weight & balance and final walk-around.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/blog-2.jpeg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full object-cover"
+                    />
+                    <span class="text-sm text-slate-700">Capt. Ritesh</span>
+                  </div>
+                  <a
+                    href="./post-safety-checks.html"
+                    class="text-[#DFA958] font-semibold hover:underline"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Card -3-->
+            <article
+              class="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition hover:-translate-y-1"
+              data-category="fleet"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/blog-3.jpg"
+                  alt="H125 cabin"
+                  class="h-52 w-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 inline-flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full"
+                >
+                  <i class="fa-solid fa-helicopter"></i> Fleet
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Jul 2025</span>
+                </div>
+                <h3
+                  class="mt-2 text-lg font-semibold group-hover:text-[#DFA958] transition"
+                >
+                  Why We Fly the Airbus H125 for High-Altitude Performance
+                </h3>
+                <p class="mt-2 text-slate-600 line-clamp-2">
+                  Power-to-weight, reliability, and handling—how the H125
+                  delivers confidence in Nepal’s demanding conditions.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/blog-3.jpg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full object-cover"
+                    />
+                    <span class="text-sm text-slate-700">Sapana Adhikari</span>
+                  </div>
+                  <a
+                    href="./post-h125-performance.html"
+                    class="text-[#DFA958] font-semibold hover:underline"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- card-4 -->
+            <article
+              class="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition hover:-translate-y-1"
+              data-category="news"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/blog-4.jpg"
+                  alt="New route"
+                  class="h-52 w-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 inline-flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full"
+                >
+                  <i class="fa-solid fa-bullhorn"></i> News
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Jul 2025</span>
+                </div>
+                <h3
+                  class="mt-2 text-lg font-semibold group-hover:text-[#DFA958] transition"
+                >
+                  New Scenic Route: Pokhara → Mardi Himal Launch
+                </h3>
+                <p class="mt-2 text-slate-600 line-clamp-2">
+                  A brand-new 30-minute route with jaw-dropping views of
+                  Machhapuchhre and the Annapurna massif.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/blog-4.jpg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full object-cover"
+                    />
+                    <span class="text-sm text-slate-700">Anish K.</span>
+                  </div>
+                  <a
+                    href="./post-new-route.html"
+                    class="text-[#DFA958] font-semibold hover:underline"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD -5 -->
+            <article
+              class="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition hover:-translate-y-1"
+              data-category="destinations"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/blog-5.jpg"
+                  alt="Langtang valley"
+                  class="h-52 w-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 inline-flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Destinations
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Jun 2025</span>
+                </div>
+                <h3
+                  class="mt-2 text-lg font-semibold group-hover:text-[#DFA958] transition"
+                >
+                  Langtang in 20 Minutes: A Quick Guide to Short Scenic Flights
+                </h3>
+                <p class="mt-2 text-slate-600 line-clamp-2">
+                  Short on time? Here’s how to experience glaciers, lakes and
+                  ridgelines in under an hour of flight time.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/blog-5.jpg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full object-cover"
+                    />
+                    <span class="text-sm text-slate-700">Krit Dot</span>
+                  </div>
+                  <a
+                    href="./post-langtang-guide.html"
+                    class="text-[#DFA958] font-semibold hover:underline"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 6-->
+            <article
+              class="group rounded-2xl overflow-hidden bg-white border hover:shadow-xl transition hover:-translate-y-1"
+              data-category="safety"
+            >
+              <div class="relative">
+                <img
+                  src="./assets/blog-6.avif"
+                  alt="Weather window"
+                  class="h-52 w-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 inline-flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full"
+                >
+                  <i class="fa-solid fa-cloud-sun"></i> Safety
+                </span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 text-xs text-slate-500">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>May 2025</span>
+                </div>
+                <h3
+                  class="mt-2 text-lg font-semibold group-hover:text-[#DFA958] transition"
+                >
+                  Reading Weather Windows: What Passengers Should Know
+                </h3>
+                <p class="mt-2 text-slate-600 line-clamp-2">
+                  Mountain weather is dynamic. Learn how we decide go/no-go and
+                  why delays can be the safest decision.
+                </p>
+                <div class="mt-4 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/blog-6.avif"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full object-cover"
+                    />
+                    <span class="text-sm text-slate-700">Rabina G.</span>
+                  </div>
+                  <a
+                    href="./post-weather-windows.html"
+                    class="text-[#DFA958] font-semibold hover:underline"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-[#23262A] text-white pt-12 pb-5 relative border-t border-gray-700 overflow-hidden"
+    >
+      <!-- background -->
+      <img
+        src="./assets/footer-img.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+      />
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <!-- Top Row: Logo & Nav -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8"
+        >
+          <!-- Logo -->
+          <div>
+            <img
+              src="./assets/logo1.png"
+              alt="Sumedha Air Logo"
+              class="h-16 w-auto"
+            />
+          </div>
+          <!-- Navigation -->
+          <ul class="flex flex-wrap gap-4 md:gap-8 text-lg font-medium">
+            <li class="hidden md:block">
+              <a href="#" class="hover:text-[#E0972A] transition nav">Home</a>
+            </li>
+            <li class="hidden md:block">
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Heli Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./ourFleet.html"
+                class="hover:text-[#E0972A] transition nav"
+                >Our Fleet</a
+              >
+            </li>
+            <li>
+              <a href="./about.html" class="hover:text-[#E0972A] transition nav"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="./team.html" class="hover:text-[#E0972A] transition nav"
+                >Team</a
+              >
+            </li>
+
+            <li class="hidden md:block">
+              <a href="#" class="hover:text-[#E0972A] transition nav"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-8"></div>
+
+        <!-- Info Row -->
+        <div
+          class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-8"
+        >
+          <!-- Overview -->
+          <div class="mb-3">
+            <!-- <h4 class="text-2xl font-thin hero-title mb-3">Overview</h4> -->
+            <p class="text-white text-base title font-normal max-w-xs">
+              At Sumedha Air, safety isn’t just a requirement—it’s a culture. We
+              operate with strict adherence to national and international
+              aviation standards.
+            </p>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Contact Info</h4>
+            <p class="text-white text-base mb-2 title font-normal">
+              +977 986542789<br />
+              info@sumedhaair.com
+            </p>
+          </div>
+          <!-- Address -->
+          <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Address</h4>
+            <p class="text-white text-base title font-normal">
+              New Baneshwor, Eyeplex Mall<br />
+              Kathmandu
+            </p>
+          </div>
+          <!-- Working Hour -->
+          <!-- <div>
+            <h4 class="text-2xl font-thin hero-title mb-3">Working Hour</h4>
+            <p class="text-white text-base title font-normal">
+              9 AM - 6 PM<br />Sun - Fri
+            </p>
+          </div> -->
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-600 mb-4"></div>
+
+        <!-- Bottom - Copyright + Socials -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <div class="text-white text-sm title font-light">
+            © 2025 Sumedha Air. All Rights Reserved.
+          </div>
+          <div class="flex gap-8 mt-2 md:mt-0">
+            <!-- social media icons-->
+            <a
+              href="https://www.facebook.com/SumedhaAir"
+              target="_blank"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram text-3xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-[#DFA958] hover:text-[#E0972A] transition"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script part  -->
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/otherNav.js"></script>
+    <script src="./scripts/blogs.js"></script>
+  </body>
+</html>
